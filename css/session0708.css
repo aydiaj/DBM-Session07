@@ -1,0 +1,43 @@
+/* Workshop activities only — the approved Session 06 shell and hero remain unchanged. */
+.s78 .block-label {padding:10px 4px 5px;margin-top:8px;font-size:.7rem;font-weight:800;letter-spacing:.06em;color:var(--muted);list-style:none}
+.s78 .block-badge {display:inline-block;width:fit-content;color:var(--blue);background:var(--soft-blue);border:1px solid var(--border);padding:5px 10px;border-radius:6px;font-size:.8rem;font-weight:750;margin:0 0 12px}
+.s78 .workshop-task {border-left:4px solid var(--teal);margin:18px 0;padding:16px 18px;border-radius:8px;background:var(--soft);min-width:0}
+.s78 .workshop-task h3 {margin:0 0 8px}
+.s78 .workshop-task .task-tag {display:inline-block;background:var(--surface);border:1px solid var(--border);padding:4px 8px;border-radius:4px;color:var(--muted);font-size:.75rem;font-weight:700;margin:0 0 9px}
+.s78 .workshop-task p {margin:8px 0}
+.s78 .time-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:15px 0}
+.s78 .time-grid>div {background:var(--soft);border:1px solid var(--border);border-top:3px solid var(--teal);border-radius:10px;min-width:0;padding:18px}
+.s78 .time-grid b {font-size:2rem;display:block;color:var(--blue);line-height:1.2}
+.s78 .time-grid span {display:block;font-weight:800;margin-top:7px}
+.s78 .entity-map {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;max-width:680px;margin:18px auto}
+.s78 .entity-card {border:1px solid var(--border);border-radius:9px;overflow:hidden;min-width:0;background:var(--surface)}
+.s78 .entity-card h3 {background:var(--soft-blue);padding:13px 14px;margin:0;font-size:1rem;color:var(--blue)}
+.s78 .entity-card ul {list-style:none;margin:0;padding:12px 14px;display:grid;gap:6px;font-size:.87rem}
+.s78 .entity-card li {display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px}
+.s78 .entity-card .key-label {font-size:.7rem;font-weight:800;background:var(--soft-teal);padding:3px 6px;border-radius:4px}
+.s78 .entity-child {grid-column:1/-1;width:100%;max-width:420px;justify-self:center}
+.s78 .entity-edge {text-align:center;color:var(--muted);font-size:.79rem;font-weight:700}
+.s78 .entity-edge b {display:block;color:var(--teal);font-size:1.25rem;margin:2px auto}
+.s78 .sim-controls {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:12px 0 18px}
+.s78 .sim-controls label {display:flex;flex-direction:column;gap:6px;font-size:.86rem;font-weight:700;min-width:0}
+.s78 .sim-controls select,.s78 .sim-controls input {width:100%;max-width:100%;min-width:0}
+.s78 .sim-controls .check {flex-direction:row;align-items:center;grid-column:1/-1}
+.s78 .sim-controls .check input {width:auto}
+.s78 .sim-toolbar {display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin:12px 0}
+.s78 .sim-toolbar button {flex:0 0 auto}
+.s78 .sim-toolbar strong {color:var(--blue)}
+.s78 .pair-records {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:15px 0}
+.s78 .pair-records label {display:grid;gap:6px;font-size:.85rem;font-weight:700}
+.s78 .pair-records input {width:100%;min-width:0}
+.s78 .lesson .s78-caption {color:var(--muted);font-size:.85rem;margin-top:8px}
+.s78 .s78-gap {margin-top:22px}
+.s78 .case-table td {vertical-align:top}
+.s78 .s78-quiz {border:2px solid var(--teal);background:var(--soft-teal);border-radius:10px;padding:18px}
+.s78 .lesson .s2-details .reveal {min-width:0}
+@media(max-width:760px) {
+  .s78 .time-grid,.s78 .sim-controls,.s78 .pair-records {grid-template-columns:minmax(0,1fr)}
+  .s78 .entity-map {gap:8px}
+  .s78 .entity-card ul {padding:10px;font-size:.8rem}
+  .s78 .entity-card h3 {padding:10px;font-size:.91rem}
+  .s78 .workshop-task {padding:13px}
+}

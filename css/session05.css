@@ -1,0 +1,82 @@
+/* Session 05 activities. The approved hero/shell rules stay in codelab.css. */
+.s5 .hero + .panel-head { margin-top: 34px; }
+.s5 .panel-head h1:focus { outline: none; }
+.s5 .s05-heading { margin: 32px 0 18px; }
+.s5 .s05-heading h2 { margin: 8px 0 12px; }
+.s5 .s05-journey { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); list-style: none; padding: 0; margin: 20px 0; gap: 10px; }
+.s5 .s05-journey li { min-width: 0; margin: 0; }
+.s5 .s05-journey button { display: flex; align-items: center; gap: 10px; width: 100%; min-height: 82px; padding: 14px 12px; border: 1px solid var(--border); border-radius: 9px; background: var(--surface); color: var(--text); text-align: left; font-size: .81rem; line-height: 1.45; }
+.s5 .s05-journey button > b { display: grid; place-items: center; width: 28px; height: 28px; flex: 0 0 28px; color: var(--blue); background: var(--soft-blue); border-radius: 6px; }
+.s5 .s05-journey button[aria-pressed=true] { border-color: var(--teal); background: var(--soft-teal); box-shadow: inset 0 -3px var(--teal); }
+.s5 .s05-live { border: 1px solid var(--border); border-radius: 10px; background: var(--surface); padding: 22px; margin: 15px 0 25px; min-width: 0; }
+.s5 .s05-live h3 { margin: 9px 0 12px; font-size: 1.1rem; }
+.s5 .s05-live p:last-child { margin-bottom: 0; }
+.s5 .s05-live .code-shell { margin-bottom: 14px; }
+.s5 .s05-status { display: inline-block; border-radius: 5px; padding: 5px 10px; background: var(--soft-teal); color: var(--text); font-size: .76rem; font-weight: 700; margin-bottom: 12px; }
+.s5 .s05-facts { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 14px; margin: 19px 0 22px; }
+.s5 .s05-facts div { padding: 14px; border-left: 3px solid var(--teal); background: var(--soft); }
+.s5 .s05-facts b { display: block; color: var(--blue); font-size: 1.6rem; line-height: 1.2; }
+.s5 .s05-facts span { display: block; margin-top: 6px; color: var(--muted); font-size: .76rem; }
+.s5 .s05-projects { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 12px; margin: 20px 0; }
+.s5 .s05-projects button { display: block; min-width: 0; width: 100%; text-align: left; color: var(--text); background: var(--surface); padding: 20px 16px; border: 1px solid var(--border); border-radius: 9px; }
+.s5 .s05-projects small { color: var(--teal); font-size: .62rem; font-weight: 800; letter-spacing: .08em; }
+.s5 .s05-projects b, .s5 .s05-projects span { display: block; overflow-wrap: anywhere; }
+.s5 .s05-projects b { margin: 9px 0 6px; font-size: .9rem; }
+.s5 .s05-projects span { font-size: .78rem; color: var(--muted); }
+.s5 .s05-projects [aria-pressed=true] { border-color: var(--teal); background: var(--soft-teal); }
+.s5 .s05-task { padding: 25px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); margin: 27px 0; box-shadow: var(--shadow); }
+.s5 .s05-task > h2 { margin: 12px 0; }
+.s5 .s05-task > p { margin: 0 0 20px; }
+.s5 .s05-task .s2-details { margin: 12px 0; }
+.s5 .s05-task .reveal > p { font-size: .9rem; }
+.s5 .s05-task .table-wrap { margin-bottom: 0; }
+.s5 .s05-match select { margin: 10px 0 16px; }
+.s5 .s05-feedback { padding: 12px 0 0; min-height: 32px; font-size: .87rem; }
+.s5 .s05-feedback:empty { display: none; }
+.s5 .s05-feedback.good { color: var(--teal); }
+.s5 .s05-controls { display: flex; align-items: end; gap: 12px; flex-wrap: wrap; margin: 0 0 20px; }
+.s5 .s05-controls label { flex: 1 1 240px; font-size: .8rem; font-weight: 700; }
+.s5 .s05-controls select { display: block; margin-top: 7px; }
+.s5 .s05-filter-lab td.s05-out { opacity: .55; }
+.s5 .s05-filter-lab tr.s05-in { background: var(--soft-teal); }
+.s5 .s05-filter-lab td:last-child { white-space: nowrap; }
+.s5 .s05-filter-lab .s05-filter-count { font-weight: 750; }
+.s5 .s05-segment { display: flex; flex-wrap: wrap; gap: 9px; margin: 18px 0 10px; }
+.s5 .s05-segment button { padding: 10px 14px; border: 1px solid var(--border); border-radius: 7px; background: var(--surface); color: var(--text); font-size: .8rem; }
+.s5 .s05-segment button[aria-pressed=true] { border-color: var(--teal); background: var(--soft-teal); font-weight: 750; }
+.s5 .s05-shape-demo pre { background: var(--soft); padding: 18px; border-radius: 7px; overflow: auto; font-size: .85rem; }
+.s5 .s05-quiz-item { min-width: 0; border: 1px solid var(--border); border-radius: 9px; padding: 16px; margin: 18px 0; }
+.s5 .s05-quiz-item legend { padding: 0 7px; font-weight: 700; font-size: .9rem; }
+.s5 .s05-quiz-item label { display: flex; align-items: flex-start; gap: 10px; padding: 9px 0; font-size: .88rem; cursor: pointer; }
+.s5 .s05-quiz-item input { flex: 0 0 auto; margin-top: 6px; accent-color: var(--teal); }
+.s5 .s05-quiz-item .s05-answer { margin: 10px 0 0; padding: 12px; background: var(--soft); border-radius: 7px; font-size: .85rem; }
+.s5 #exit-quiz-result { font-weight: 700; margin: 18px 0 0; }
+.s5 .s05-sources { margin: 32px 0; padding-top: 22px; border-top: 1px solid var(--border); }
+.s5 .s05-sources > h2 { margin-bottom: 18px; }
+.s5 select { cursor: pointer; }
+.s5 .card > label { display: block; margin: 16px 0 7px; }
+.s5 .card > select { margin-bottom: 16px; }
+.s5 .code-shell pre { tab-size: 4; }
+.s5 .s2-note__content { min-width: 0; }
+.s5 p code, .s5 li code, .s5 td code { overflow-wrap: anywhere; }
+.s5 pre code { overflow-wrap: normal; }
+@media (max-width: 800px) {
+  .s5 .s05-journey { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .s5 .s05-projects { grid-template-columns: 1fr; }
+  .s5 .s05-projects button { padding: 16px; }
+}
+@media (max-width: 600px) {
+  .s5 .s05-task { padding: 18px; }
+  .s5 .s05-live { padding: 17px; }
+  .s5 .s05-journey button { padding: 11px 9px; font-size: .77rem; gap: 8px; }
+  .s5 .s05-facts { gap: 8px; }
+  .s5 .s05-facts div { padding: 10px; }
+  .s5 .s05-facts span { font-size: .7rem; }
+  .s5 .s05-controls > button { width: 100%; }
+  .s5 .hero + .panel-head { margin-top: 30px; }
+}
+@media print {
+  .s5 .s05-journey, .s5 .s05-controls { display: none; }
+  .s5 .s05-task { break-inside: avoid; }
+  .s5 details > .reveal { display: block; }
+}
