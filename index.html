@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="#102d49">
-    <meta name="description" content="DBM Sessions 07–08: applied EF Core LINQ, CRUD and related-data practice across two blocks.">
+    <meta name="description"
+        content="DBM Sessions 07–08: applied EF Core LINQ, CRUD and related-data practice across two blocks.">
     <title>DBM · Sessions 07–08 · Applied LINQ &amp; CRUD</title>
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/codelab.css">
@@ -41,9 +42,55 @@
                 </div>
             </div>
             <nav aria-label="Lesson sections">
-                <ol class="step-nav"><li class="block-label">SESSION 07 · 90 MIN</li><li><button class="step-link" data-step="0" aria-controls="s6-panel-0"><span class="step-num">01</span><span>Prepare the shop<small>10 min</small></span><span class="tick" aria-hidden="true">✓</span></button></li><li><button class="step-link" data-step="1" aria-controls="s6-panel-1"><span class="step-num">02</span><span>Warm up with LINQ<small>15 min</small></span><span class="tick" aria-hidden="true">✓</span></button></li><li><button class="step-link" data-step="2" aria-controls="s6-panel-2"><span class="step-num">03</span><span>Compose and page queries<small>25 min</small></span><span class="tick" aria-hidden="true">✓</span></button></li><li><button class="step-link" data-step="3" aria-controls="s6-panel-3"><span class="step-num">04</span><span>Build the dashboard<small>15 min</small></span><span class="tick" aria-hidden="true">✓</span></button></li><li><button class="step-link" data-step="4" aria-controls="s6-panel-4"><span class="step-num">05</span><span>CRUD and AddRange<small>25 min</small></span><span class="tick" aria-hidden="true">✓</span></button></li><li class="block-label">SEPARATE QUIZ · 15 MIN</li><li><button class="step-link" data-step="5" aria-controls="s6-panel-5"><span class="step-num">06</span><span>Prior learning quiz<small>15 min · extra</small></span><span class="tick" aria-hidden="true">✓</span></button></li><li class="block-label">SESSION 08 · 60 MIN</li><li><button class="step-link" data-step="6" aria-controls="s6-panel-6"><span class="step-num">07</span><span>Join related tables<small>12 min</small></span><span class="tick" aria-hidden="true">✓</span></button></li><li><button class="step-link" data-step="7" aria-controls="s6-panel-7"><span class="step-num">08</span><span>Change and protect relationships<small>10 min</small></span><span class="tick" aria-hidden="true">✓</span></button></li><li><button class="step-link" data-step="8" aria-controls="s6-panel-8"><span class="step-num">09</span><span>Update multiple items<small>10 min</small></span><span class="tick" aria-hidden="true">✓</span></button></li><li><button class="step-link" data-step="9" aria-controls="s6-panel-9"><span class="step-num">10</span><span>Deactivate and reactivate<small>8 min</small></span><span class="tick" aria-hidden="true">✓</span></button></li><li><button class="step-link" data-step="10" aria-controls="s6-panel-10"><span class="step-num">11</span><span>Edit in a new context<small>12 min</small></span><span class="tick" aria-hidden="true">✓</span></button></li><li><button class="step-link" data-step="11" aria-controls="s6-panel-11"><span class="step-num">12</span><span>Remove, verify and submit<small>8 min</small></span><span class="tick" aria-hidden="true">✓</span></button></li></ol>
+                <ol class="step-nav">
+                    <li class="block-label">SESSION 07 · 90 MIN</li>
+                    <li><button class="step-link" data-step="0" aria-controls="s6-panel-0"><span
+                                class="step-num">01</span><span>Prepare the shop<small>10 min</small></span><span
+                                class="tick" aria-hidden="true">✓</span></button></li>
+                    <li><button class="step-link" data-step="1" aria-controls="s6-panel-1"><span
+                                class="step-num">02</span><span>Warm up with LINQ<small>15 min</small></span><span
+                                class="tick" aria-hidden="true">✓</span></button></li>
+                    <li><button class="step-link" data-step="2" aria-controls="s6-panel-2"><span
+                                class="step-num">03</span><span>Compose and page queries<small>25
+                                    min</small></span><span class="tick" aria-hidden="true">✓</span></button></li>
+                    <li><button class="step-link" data-step="3" aria-controls="s6-panel-3"><span
+                                class="step-num">04</span><span>Build the dashboard<small>15 min</small></span><span
+                                class="tick" aria-hidden="true">✓</span></button></li>
+                    <li><button class="step-link" data-step="4" aria-controls="s6-panel-4"><span
+                                class="step-num">05</span><span>CRUD and AddRange<small>25 min</small></span><span
+                                class="tick" aria-hidden="true">✓</span></button></li>
+                    <li class="block-label">SEPARATE QUIZ · 30 MIN</li>
+                    <li><button class="step-link" data-step="5" aria-controls="s6-panel-5"><span
+                                class="step-num">06</span><span>Prior learning quiz<small>30 min ·
+                                    extra</small></span><span class="tick" aria-hidden="true">✓</span></button></li>
+                    <li class="block-label">SESSION 08 · 60 MIN</li>
+                    <li><button class="step-link" data-step="6" aria-controls="s6-panel-6"><span
+                                class="step-num">07</span><span>Join related tables<small>12 min</small></span><span
+                                class="tick" aria-hidden="true">✓</span></button></li>
+                    <li><button class="step-link" data-step="7" aria-controls="s6-panel-7"><span
+                                class="step-num">08</span><span>Change and protect relationships<small>10
+                                    min</small></span><span class="tick" aria-hidden="true">✓</span></button></li>
+                    <li><button class="step-link" data-step="8" aria-controls="s6-panel-8"><span
+                                class="step-num">09</span><span>Update multiple items<small>10 min</small></span><span
+                                class="tick" aria-hidden="true">✓</span></button></li>
+                    <li><button class="step-link" data-step="9" aria-controls="s6-panel-9"><span
+                                class="step-num">10</span><span>Deactivate and reactivate<small>8
+                                    min</small></span><span class="tick" aria-hidden="true">✓</span></button></li>
+                    <li><button class="step-link" data-step="10" aria-controls="s6-panel-10"><span
+                                class="step-num">11</span><span>Edit in a new context<small>12 min</small></span><span
+                                class="tick" aria-hidden="true">✓</span></button></li>
+                    <li><button class="step-link" data-step="11" aria-controls="s6-panel-11"><span
+                                class="step-num">12</span><span>Remove, verify and submit<small>8
+                                    min</small></span><span class="tick" aria-hidden="true">✓</span></button></li>
+                </ol>
             </nav>
-            <div class="sidebar-resources"><span>QUICK REFERENCES</span><a href="downloads/CRUD_Quick_Reference.md" download>↓ CRUD &amp; states</a><a href="downloads/LINQ_Quick_Reference.pdf" target="_blank" rel="noopener">↗ LINQ quick reference</a><a href="downloads/EF10_Session07-08_Student_Starter.zip" download>↓ Student starter</a><a href="downloads/setup-shop.sql" download>↓ SQL setup script</a><a href="#sources" id="s6-sources-link">↗ Sources and downloads</a><button id="s6-reset" type="button">↺ Reset workshop</button><small id="s6-storage-status">Progress and notes save on this device.</small></div>
+            <div class="sidebar-resources"><span>QUICK REFERENCES</span><a href="downloads/CRUD_Quick_Reference.md"
+                    download>↓ CRUD &amp; states</a><a href="downloads/LINQ_Quick_Reference.pdf" target="_blank"
+                    rel="noopener">↗ LINQ quick reference</a><a href="downloads/EF10_Session07-08_Student_Starter.zip"
+                    download>↓ Student starter</a><a href="downloads/setup-shop.sql" download>↓ SQL setup script</a><a
+                    href="#sources" id="s6-sources-link">↗ Sources and downloads</a><button id="s6-reset"
+                    type="button">↺ Reset workshop</button><small id="s6-storage-status">Progress and notes save on this
+                    device.</small></div>
             <div class="sidebar-foot">UNRWA Gaza Training Centre<br>Programming and Database Level 2<br>Eng. Abeer
                 Elaydi</div>
         </aside>
@@ -58,91 +105,400 @@
                 </div>
             </header>
             <main id="s6-content" class="main" tabindex="-1">
-                
-<section class="lesson" id="s6-panel-0" aria-labelledby="s6-title-0" ><div class="hero hero-intro"><div class="hero-main"><span class="eyebrow">TVET INTERACTIVE CODELAB STUDIO · SESSIONS 07–08</span><h1>Campus Supply<br><em>Shop workshop</em></h1><p>Build better queries.<br>Manage related data.</p><div class="chips"><span>DBM · PDB2</span><span>EF Core 10</span><span>150 min practice</span></div></div></div><div class="panel-head"><span class="section-kicker">SESSION 07 · STEP 01 / 12 · 10 MINUTES</span><h1 id="s6-title-0" tabindex="-1">Prepare the shop</h1><p>Setup, read the schema and run the app</p></div><div class="card s2-card"><h2>The complete workshop</h2>
-<p>Our shop has grown from one table to three. Use the same Console solution and SQL Server database for two connected lessons. The aim is practical mastery of the data-access skills from Sessions 05–06, with a few essential next steps.</p>
-<div class="time-grid"><div><b>90 min</b><span>Session 07 · LINQ and CRUD</span><p>30 min live + 60 min independent.</p></div><div><b>60 min</b><span>Session 08 · Related data</span><p>60 min practice; 15-min quiz before it (separate).</p></div></div>
-<p><strong>150 minutes of practice + 15-minute quiz = 165 minutes total.</strong> The shop has 120 seeded items, six categories and six suppliers.</p>
-<ul><li>Compose, page, group and project LINQ queries.</li><li>Read and write across three entity sets; manage multiple pending changes.</li><li>Join related records, validate foreign keys, and safely modify or delete practice records.</li><li>Choose tracking, explicit updates, soft deletion and two-context updates appropriately.</li></ul>
-<p><strong>Plan:</strong> complete Steps 01–05 first. Keep all practice IDs. Continue with Step 06 next class; do not install another database.</p>
-</div><div class="card s2-card"><h2>Read the prepared data model</h2><div class="entity-map" aria-label="Categories and Suppliers each have many Items"><article class="entity-card"><h3>Categories</h3><ul><li>Id <span class="key-label">PK</span></li><li>Name</li></ul></article><article class="entity-card"><h3>Suppliers</h3><ul><li>Id <span class="key-label">PK</span></li><li>Name · City</li></ul></article><div class="entity-edge">1 category <b>↓</b> many items</div><div class="entity-edge">1 supplier <b>↓</b> many items</div><article class="entity-card entity-child"><h3>Items</h3><ul><li>Id <span class="key-label">PK</span></li><li>Name · UnitPrice</li><li>Stock · IsActive</li><li>CategoryId <span class="key-label">FK → Categories.Id</span></li><li>SupplierId <span class="key-label">FK → Suppliers.Id</span></li></ul></article></div>
-<p>Each Item references exactly one Category and one Supplier. One parent can have many Items. The foreign key stores the referenced ID, not the name or a C# object.</p>
-<p><strong>Scope:</strong> the context mapping is supplied. Today we use FK properties and LINQ joins. Navigation properties, migrations and loading strategies come later.</p>
-</div><div class="card s2-card"><h2>Setup before class when possible</h2>
-<div class="button-row"><a class="button s2-btn primary" href="downloads/EF10_Session07-08_Student_Starter.zip" download>Student starter ZIP</a><a class="button s2-btn secondary" href="downloads/START-HERE.md" download>Start here</a><a class="button s2-btn secondary" href="downloads/setup-shop.sql" download>SQL setup</a></div>
-<ol><li>Extract the starter. Execute <code>setup-shop.sql</code> in SSMS on your local server. It creates the new <code>DBM_Session0708_Shop</code> once and preserves later work. The older 12-item database remains untouched.</li><li>Run <a href="downloads/verify-shop.sql" download>verify-shop.sql</a>. On a fresh setup expect 6 categories, 6 suppliers, 120 items, and 97 available items.</li><li>Open <code>EF10InventoryManager.sln</code>. Set <code>EF10_InventoryManager</code> as Startup Project.</li><li>In <code>appsettings.json</code>, replace YOUR_SERVER with the actual instance. Keep the database name and existing pinned package versions. Restore/build/run.</li><li>Run option 1. Read the supplied examples in <code>QueryTasks.cs</code> and <code>CrudTasks.cs</code>. Complete the remaining TODOs in the designated steps.</li></ol>
-<div class="table-wrap s2-table-wrap" tabindex="0" role="region" aria-label="Project structure"><table class="s2-table case-table"><thead><tr><th scope="col">Project</th><th scope="col">Role</th></tr></thead><tbody><tr><td>EF10_InventoryModels</td><td>Item, Category, Supplier</td></tr><tr><td>EF10_InventoryDBLibrary</td><td>DbContext, DbSets, mapping, SQL Server provider</td></tr><tr><td>EF10_InventoryManager</td><td>Console menu, input validation, queries, CRUD and workshop tasks</td></tr></tbody></table></div><div class="code-shell"><div class="code-head"><span>Program.cs · supplied connection and provider</span><button class="copy copy-btn" type="button">Copy code</button></div><pre tabindex="0"><code>options = new DbContextOptionsBuilder&lt;InventoryDbContext&gt;()
+
+                <section class="lesson" id="s6-panel-0" aria-labelledby="s6-title-0">
+                    <div class="hero hero-intro">
+                        <div class="hero-main"><span class="eyebrow">TVET INTERACTIVE CODELAB STUDIO · SESSIONS
+                                07–08</span>
+                            <h1>Campus Supply<br><em>Shop workshop</em></h1>
+                            <p>Build better queries.<br>Manage related data.</p>
+                            <div class="chips"><span>DBM · PDB2</span><span>EF Core 10</span><span>150 min
+                                    practice</span></div>
+                        </div>
+                    </div>
+                    <div class="panel-head"><span class="section-kicker">SESSION 07 · STEP 01 / 12 · 10 MINUTES</span>
+                        <h1 id="s6-title-0" tabindex="-1">Prepare the shop</h1>
+                        <p>Setup, read the schema and run the app</p>
+                    </div>
+                    <div class="card s2-card">
+                        <h2>The complete workshop</h2>
+                        <p>Our shop has grown from one table to three. Use the same Console solution and SQL Server
+                            database for two connected lessons. The aim is practical mastery of the data-access skills
+                            from Sessions 05–06, with a few essential next steps.</p>
+                        <div class="time-grid">
+                            <div><b>90 min</b><span>Session 07 · LINQ and CRUD</span>
+                                <p>30 min live + 60 min independent.</p>
+                            </div>
+                            <div><b>60 min</b><span>Session 08 · Related data</span>
+                                <p>60 min practice; 15-min quiz before it (separate).</p>
+                            </div>
+                        </div>
+                        <p><strong>150 minutes of practice + 15-minute quiz = 165 minutes total.</strong> The shop has
+                            120 seeded items, six categories and six suppliers.</p>
+                        <ul>
+                            <li>Compose, page, group and project LINQ queries.</li>
+                            <li>Read and write across three entity sets; manage multiple pending changes.</li>
+                            <li>Join related records, validate foreign keys, and safely modify or delete practice
+                                records.</li>
+                            <li>Choose tracking, explicit updates, soft deletion and two-context updates appropriately.
+                            </li>
+                        </ul>
+                        <p><strong>Plan:</strong> complete Steps 01–05 first. Keep all practice IDs. Continue with Step
+                            06 next class; do not install another database.</p>
+                    </div>
+                    <div class="card s2-card">
+                        <h2>Read the prepared data model</h2>
+                        <div class="entity-map" aria-label="Categories and Suppliers each have many Items">
+                            <article class="entity-card">
+                                <h3>Categories</h3>
+                                <ul>
+                                    <li>Id <span class="key-label">PK</span></li>
+                                    <li>Name</li>
+                                </ul>
+                            </article>
+                            <article class="entity-card">
+                                <h3>Suppliers</h3>
+                                <ul>
+                                    <li>Id <span class="key-label">PK</span></li>
+                                    <li>Name · City</li>
+                                </ul>
+                            </article>
+                            <div class="entity-edge">1 category <b>↓</b> many items</div>
+                            <div class="entity-edge">1 supplier <b>↓</b> many items</div>
+                            <article class="entity-card entity-child">
+                                <h3>Items</h3>
+                                <ul>
+                                    <li>Id <span class="key-label">PK</span></li>
+                                    <li>Name · UnitPrice</li>
+                                    <li>Stock · IsActive</li>
+                                    <li>CategoryId <span class="key-label">FK → Categories.Id</span></li>
+                                    <li>SupplierId <span class="key-label">FK → Suppliers.Id</span></li>
+                                </ul>
+                            </article>
+                        </div>
+                        <p>Each Item references exactly one Category and one Supplier. One parent can have many Items.
+                            The foreign key stores the referenced ID, not the name or a C# object.</p>
+                        <p><strong>Scope:</strong> the context mapping is supplied. Today we use FK properties and LINQ
+                            joins. Navigation properties, migrations and loading strategies come later.</p>
+                    </div>
+                    <div class="card s2-card">
+                        <h2>Setup before class when possible</h2>
+                        <div class="button-row"><a class="button s2-btn primary"
+                                href="downloads/EF10_Session07-08_Student_Starter.zip" download>Student starter
+                                ZIP</a><a class="button s2-btn secondary" href="downloads/START-HERE.md" download>Start
+                                here</a><a class="button s2-btn secondary" href="downloads/setup-shop.sql" download>SQL
+                                setup</a></div>
+                        <ol>
+                            <li>Extract the starter. Execute <code>setup-shop.sql</code> in SSMS on your local server.
+                                It creates the new <code>DBM_Session0708_Shop</code> once and preserves later work. The
+                                older 12-item database remains untouched.</li>
+                            <li>Run <a href="downloads/verify-shop.sql" download>verify-shop.sql</a>. On a fresh setup
+                                expect 6 categories, 6 suppliers, 120 items, and 97 available items.</li>
+                            <li>Open <code>EF10InventoryManager.sln</code>. Set <code>EF10_InventoryManager</code> as
+                                Startup Project.</li>
+                            <li>In <code>appsettings.json</code>, replace YOUR_SERVER with the actual instance. Keep the
+                                database name and existing pinned package versions. Restore/build/run.</li>
+                            <li>Run option 1. Read the supplied examples in <code>QueryTasks.cs</code> and
+                                <code>CrudTasks.cs</code>. Complete the remaining TODOs in the designated steps.
+                            </li>
+                        </ol>
+                        <div class="table-wrap s2-table-wrap" tabindex="0" role="region" aria-label="Project structure">
+                            <table class="s2-table case-table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Project</th>
+                                        <th scope="col">Role</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>EF10_InventoryModels</td>
+                                        <td>Item, Category, Supplier</td>
+                                    </tr>
+                                    <tr>
+                                        <td>EF10_InventoryDBLibrary</td>
+                                        <td>DbContext, DbSets, mapping, SQL Server provider</td>
+                                    </tr>
+                                    <tr>
+                                        <td>EF10_InventoryManager</td>
+                                        <td>Console menu, input validation, queries, CRUD and workshop tasks</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="code-shell">
+                            <div class="code-head"><span>Program.cs · supplied connection and provider</span><button
+                                    class="copy copy-btn" type="button">Copy code</button></div>
+                            <pre tabindex="0"><code>options = new DbContextOptionsBuilder&lt;InventoryDbContext&gt;()
     .UseSqlServer(connection).Options;
 
-using var db = new InventoryDbContext(options);</code></pre></div>
-<p><code>UseSqlServer</code> configures the SQL Server provider (Microsoft.EntityFrameworkCore.SqlServer). A fresh context is used per operation; option 17 manages its own separate contexts. The connection is used when an actual database operation executes.</p>
-<p>Id follows EF's primary-key convention. SQL Server's IDENTITY column generates the value at insertion. Keep key identity and value generation distinct.</p>
-</div><aside class="teacher-note s2-note"><img class="s2-note__mascot" src="images/db-mascot-teacher.webp" alt="" width="64" height="64"><div class="s2-note__content"><strong>Do not reset your database</strong><p>The starter is restricted to DBM_Session0708_Shop. Keep seed item IDs 1–120 and category IDs 1–6. Only create or modify your own practice records. Never use a shared production database.</p></div></aside><footer class="step-footer"><button class="button secondary s2-btn" data-prev disabled>← Previous</button><div class="step-actions"><button class="button s2-btn primary" data-complete="0" aria-pressed="false">✓ Mark step complete</button><button class="button secondary s2-btn" data-next >Next →</button></div></footer></section>
-<section class="lesson" id="s6-panel-1" aria-labelledby="s6-title-1" hidden><div class="panel-head"><span class="section-kicker">SESSION 07 · STEP 02 / 12 · 15 MINUTES</span><h1 id="s6-title-1" tabindex="-1">Warm up with LINQ</h1><p>Search, sort and projection</p></div><div class="card s2-card"><h2>Recall the query journey</h2>
-<p>Start with a DbSet, describe the matching rows, then execute the query. Choose tracking only when entities need to be modified in the same context.</p>
-<div class="s06-flow"><div class="s06-flow-node"><span>1</span><strong>Define</strong><p>Where, OrderBy and Select express the query.</p></div><div class="s06-flow-node"><span>2</span><strong>Execute</strong><p>ToListAsync runs the query, returning objects or projected values.</p></div><div class="s06-flow-node"><span>3</span><strong>Use</strong><p>Print the loaded list. Printing does not re-run the query.</p></div></div>
-<div class="code-shell"><div class="code-head"><span>Example · familiar query</span><button class="copy copy-btn" type="button">Copy code</button></div><pre tabindex="0"><code>var query = db.Items.AsNoTracking()
+using var db = new InventoryDbContext(options);</code></pre>
+                        </div>
+                        <p><code>UseSqlServer</code> configures the SQL Server provider
+                            (Microsoft.EntityFrameworkCore.SqlServer). A fresh context is used per operation; option 17
+                            manages its own separate contexts. The connection is used when an actual database operation
+                            executes.</p>
+                        <p>Id follows EF's primary-key convention. SQL Server's IDENTITY column generates the value at
+                            insertion. Keep key identity and value generation distinct.</p>
+                    </div>
+                    <aside class="teacher-note s2-note"><img class="s2-note__mascot" src="images/db-mascot-teacher.webp"
+                            alt="" width="64" height="64">
+                        <div class="s2-note__content"><strong>Do not reset your database</strong>
+                            <p>The starter is restricted to DBM_Session0708_Shop. Keep seed item IDs 1–120 and category
+                                IDs 1–6. Only create or modify your own practice records. Never use a shared production
+                                database.</p>
+                        </div>
+                    </aside>
+                    <footer class="step-footer"><button class="button secondary s2-btn" data-prev disabled>←
+                            Previous</button>
+                        <div class="step-actions"><button class="button s2-btn primary" data-complete="0"
+                                aria-pressed="false">✓ Mark step complete</button><button
+                                class="button secondary s2-btn" data-next>Next →</button></div>
+                    </footer>
+                </section>
+                <section class="lesson" id="s6-panel-1" aria-labelledby="s6-title-1" hidden>
+                    <div class="panel-head"><span class="section-kicker">SESSION 07 · STEP 02 / 12 · 15 MINUTES</span>
+                        <h1 id="s6-title-1" tabindex="-1">Warm up with LINQ</h1>
+                        <p>Search, sort and projection</p>
+                    </div>
+                    <div class="card s2-card">
+                        <h2>Recall the query journey</h2>
+                        <p>Start with a DbSet, describe the matching rows, then execute the query. Choose tracking only
+                            when entities need to be modified in the same context.</p>
+                        <div class="s06-flow">
+                            <div class="s06-flow-node"><span>1</span><strong>Define</strong>
+                                <p>Where, OrderBy and Select express the query.</p>
+                            </div>
+                            <div class="s06-flow-node"><span>2</span><strong>Execute</strong>
+                                <p>ToListAsync runs the query, returning objects or projected values.</p>
+                            </div>
+                            <div class="s06-flow-node"><span>3</span><strong>Use</strong>
+                                <p>Print the loaded list. Printing does not re-run the query.</p>
+                            </div>
+                        </div>
+                        <div class="code-shell">
+                            <div class="code-head"><span>Example · familiar query</span><button class="copy copy-btn"
+                                    type="button">Copy code</button></div>
+                            <pre tabindex="0"><code>var query = db.Items.AsNoTracking()
     .Where(i =&gt; i.IsActive &amp;&amp; i.Stock &gt; 0);
-var rows = await query.ToListAsync();</code></pre></div>
-<p>Where compares rows; Select determines the result shape. OrderBy establishes primary ordering; ThenBy breaks ties. CountAsync and AnyAsync return scalars, not entity lists.</p>
-</div><div class="card s2-card"><h2>Two short exercises</h2>
-    <article class="workshop-task">
-      <span class="task-tag">TODO 01 · MENU 2 · QueryTasks.cs</span>
-      <h3>Search active items</h3><p>Find active item names containing the entered keyword. Order by price ascending, then Id.</p>
-      <p><strong>Predict before running:</strong> If an item's name matches the keyword but IsActive is false, will it appear in the results?</p>
-      <details class="s2-details"><summary>Hint</summary><div class="reveal"><p>Chain AsNoTracking, Where with an AND predicate, OrderBy, ThenBy, ToListAsync.</p></div></details>
-      <div class="s06-outcome"><h3>Verify your work</h3><p>With fresh seed data, keyword Notebook returns Notebook then Graph Notebook. An unmatched keyword shows no results.</p></div>
-      <label class="check"><input type="checkbox" data-save="task-1"><span>I ran option 2 and checked the result.</span></label>
-    </article>
-    <article class="workshop-task">
-      <span class="task-tag">TODO 02 · MENU 3 · QueryTasks.cs</span>
-    <h3>Category top-three report</h3>
+var rows = await query.ToListAsync();</code></pre>
+                        </div>
+                        <p>Where compares rows; Select determines the result shape. OrderBy establishes primary
+                            ordering; ThenBy breaks ties. CountAsync and AnyAsync return scalars, not entity lists.</p>
+                    </div>
+                    <div class="card s2-card">
+                        <h2>Two short exercises</h2>
+                        <article class="workshop-task">
+                            <span class="task-tag">TODO 01 · MENU 2 · QueryTasks.cs</span>
+                            <h3>Search active items</h3>
+                            <p>Find active item names containing the entered keyword. Order by price ascending, then Id.
+                            </p>
+                            <p><strong>Predict before running:</strong> If an item's name matches the keyword but
+                                IsActive is false, will it appear in the results?</p>
+                            <details class="s2-details">
+                                <summary>Hint</summary>
+                                <div class="reveal">
+                                    <p>Chain AsNoTracking, Where with an AND predicate, OrderBy, ThenBy, ToListAsync.
+                                    </p>
+                                </div>
+                            </details>
+                            <div class="s06-outcome">
+                                <h3>Verify your work</h3>
+                                <p>With fresh seed data, keyword Notebook returns Notebook then Graph Notebook. An
+                                    unmatched keyword shows no results.</p>
+                            </div>
+                            <label class="check"><input type="checkbox" data-save="task-1"><span>I ran option 2 and
+                                    checked the result.</span></label>
+                        </article>
+                        <article class="workshop-task">
+                            <span class="task-tag">TODO 02 · MENU 3 · QueryTasks.cs</span>
+                            <h3>Category top-three report</h3>
 
-<p>Display the three most expensive available items in a selected category.</p>
+                            <p>Display the three most expensive available items in a selected category.</p>
 
-<ol>
-    <li>Check that the entered category ID exists.</li>
-    <li>Find items in that category that are active and have stock greater than zero.</li>
-    <li>Sort items by price from highest to lowest, then by ID ascending if prices are equal.</li>
-    <li>Take the first three items.</li>
-    <li>Use projection to return only
-        <code>Id</code>, <code>Name</code>,
-        <code>UnitPrice</code>, and <code>Stock</code>.
-    </li>
-</ol>
-      <p><strong>Predict before running:</strong> Does the result contain full Item objects or selected values?</p>
-      <details class="s2-details"><summary>Hint</summary><div class="reveal"><p>Use AnyAsync to check the parent, filter by FK, order by descending price and ascending Id, then Take and Select.</p></div></details>
-    
-      <div class="s06-outcome"><h3>Verify your work</h3><p>Category 2 returns Power Strip, Card Reader, Wireless Mouse. Category 6 returns no rows.</p></div>
-      <label class="check"><input type="checkbox" data-save="task-2"><span>I ran option 3 and checked the result.</span></label>
-    </article></div><footer class="step-footer"><button class="button secondary s2-btn" data-prev >← Previous</button><div class="step-actions"><button class="button s2-btn primary" data-complete="1" aria-pressed="false">✓ Mark step complete</button><button class="button secondary s2-btn" data-next >Next →</button></div></footer></section>
-<section class="lesson" id="s6-panel-2" aria-labelledby="s6-title-2" hidden><div class="panel-head"><span class="section-kicker">SESSION 07 · STEP 03 / 12 · 25 MINUTES</span><h1 id="s6-title-2" tabindex="-1">Compose and page queries</h1><p>Dynamic filters and SQL preview</p></div><div class="card s2-card"><h2>Build filters without executing them</h2>
-<p>The shop needs a searchable catalog. A customer may select any combination of keyword, category, supplier, maximum price and availability. Don't write a different query for every combination.</p>
-<div class="code-shell"><div class="code-head"><span>Query composition</span><button class="copy copy-btn" type="button">Copy code</button></div><pre tabindex="0"><code>IQueryable&lt;Item&gt; query = db.Items.AsNoTracking();
+                            <ol>
+                                <li>Check that the entered category ID exists.</li>
+                                <li>Find items in that category that are active and have stock greater than zero.</li>
+                                <li>Sort items by price from highest to lowest, then by ID ascending if prices are
+                                    equal.</li>
+                                <li>Take the first three items.</li>
+                                <li>Use projection to return only
+                                    <code>Id</code>, <code>Name</code>,
+                                    <code>UnitPrice</code>, and <code>Stock</code>.
+                                </li>
+                            </ol>
+                            <p><strong>Predict before running:</strong> Does the result contain full Item objects or
+                                selected values?</p>
+                            <details class="s2-details">
+                                <summary>Hint</summary>
+                                <div class="reveal">
+                                    <p>Use AnyAsync to check the parent, filter by FK, order by descending price and
+                                        ascending Id, then Take and Select.</p>
+                                </div>
+                            </details>
+
+                            <div class="s06-outcome">
+                                <h3>Verify your work</h3>
+                                <p>Category 2 returns Power Strip, Card Reader, Wireless Mouse. Category 6 returns no
+                                    rows.</p>
+                            </div>
+                            <label class="check"><input type="checkbox" data-save="task-2"><span>I ran option 3 and
+                                    checked the result.</span></label>
+                        </article>
+                    </div>
+                    <footer class="step-footer"><button class="button secondary s2-btn" data-prev>← Previous</button>
+                        <div class="step-actions"><button class="button s2-btn primary" data-complete="1"
+                                aria-pressed="false">✓ Mark step complete</button><button
+                                class="button secondary s2-btn" data-next>Next →</button></div>
+                    </footer>
+                </section>
+                <section class="lesson" id="s6-panel-2" aria-labelledby="s6-title-2" hidden>
+                    <div class="panel-head"><span class="section-kicker">SESSION 07 · STEP 03 / 12 · 25 MINUTES</span>
+                        <h1 id="s6-title-2" tabindex="-1">Compose and page queries</h1>
+                        <p>Dynamic filters and SQL preview</p>
+                    </div>
+                    <div class="card s2-card">
+                        <h2>Build filters without executing them</h2>
+                        <p>The shop needs a searchable catalog. A customer may select any combination of keyword,
+                            category, supplier, maximum price and availability. Don't write a different query for every
+                            combination.</p>
+                        <div class="code-shell">
+                            <div class="code-head"><span>Query composition</span><button class="copy copy-btn"
+                                    type="button">Copy code</button></div>
+                            <pre tabindex="0"><code>IQueryable&lt;Item&gt; query = db.Items.AsNoTracking();
 if (categoryId &gt; 0)
     query = query.Where(i =&gt; i.CategoryId == categoryId);
-// Continue adding filters; execute once you know the result needed.</code></pre></div><div class="table-wrap s2-table-wrap" tabindex="0" role="region" aria-label="Paging operators"><table class="s2-table case-table"><thead><tr><th scope="col">Operator</th><th scope="col">Purpose</th></tr></thead><tbody><tr><td>IQueryable&lt;Item&gt;</td><td>Composable provider-backed query</td></tr><tr><td>CountAsync</td><td>Execute a count of the matches before paging</td></tr><tr><td>Skip(n)</td><td>Skip n ordered matches</td></tr><tr><td>Take(10)</td><td>Limit a page to ten rows</td></tr><tr><td>ThenBy(Id)</td><td>Stable tie-breaker</td></tr><tr><td>ToQueryString</td><td>Debugging preview; does not fetch rows</td></tr></tbody></table></div><div class="code-shell"><div class="code-head"><span>One-based page number</span><button class="copy copy-btn" type="button">Copy code</button></div><pre tabindex="0"><code>var pageQuery = query.OrderBy(i =&gt; i.UnitPrice)
+// Continue adding filters; execute once you know the result needed.</code></pre>
+                        </div>
+                        <div class="table-wrap s2-table-wrap" tabindex="0" role="region" aria-label="Paging operators">
+                            <table class="s2-table case-table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Operator</th>
+                                        <th scope="col">Purpose</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>IQueryable&lt;Item&gt;</td>
+                                        <td>Composable provider-backed query</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CountAsync</td>
+                                        <td>Execute a count of the matches before paging</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Skip(n)</td>
+                                        <td>Skip n ordered matches</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Take(10)</td>
+                                        <td>Limit a page to ten rows</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ThenBy(Id)</td>
+                                        <td>Stable tie-breaker</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ToQueryString</td>
+                                        <td>Debugging preview; does not fetch rows</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="code-shell">
+                            <div class="code-head"><span>One-based page number</span><button class="copy copy-btn"
+                                    type="button">Copy code</button></div>
+                            <pre tabindex="0"><code>var pageQuery = query.OrderBy(i =&gt; i.UnitPrice)
     .ThenBy(i =&gt; i.Id)
     .Skip((page - 1) * pageSize)
-    .Take(pageSize);</code></pre></div>
-<p>Always order before Skip/Take and use a unique tie-breaker. Count before applying the page limit.</p></div><div class="card s2-card"><h2>Try the browser simulation</h2>
-<p class="small">Simulated database: the following list uses the same 120 seed rows as the SQL script. It demonstrates the logic, not an actual SQL Server connection. Text search is case-insensitive here; SQL Server collation controls the real query.</p>
-<div class="s06-simulator"><div class="sim-controls">
-<label for="sim-keyword">Keyword<input id="sim-keyword" type="text" placeholder="All names"></label>
-<label for="sim-category">Category<select id="sim-category"><option value="0">All</option><option value="1">Stationery</option><option value="2">Electronics</option><option value="3">Accessories</option><option value="4">Art Supplies</option><option value="5">Lab Supplies</option><option value="6">Clearance (empty)</option></select></label>
-<label for="sim-supplier">Supplier<select id="sim-supplier"><option value="0">All</option><option value="1">Alpha Supplies</option><option value="2">Bright Tech</option><option value="3">Campus Goods</option><option value="4">Creative Source</option><option value="5">Lab Essentials</option><option value="6">Reserve Supplier (empty)</option></select></label>
-<label for="sim-max">Maximum price<input id="sim-max" type="number" min="0" step=".01" placeholder="Unlimited"></label>
-<label class="check"><input id="sim-available" type="checkbox" checked><span>Available only (active and stock &gt; 0)</span></label></div>
-<div class="sim-toolbar"><strong id="sim-count" role="status"></strong><button type="button" class="button secondary s2-btn" id="sim-reset">Reset filters</button></div>
-<div class="table-wrap s2-table-wrap" tabindex="0"><table class="s2-table"><thead><tr><th>ID</th><th>Name</th><th>Price</th><th>Stock</th><th>Category</th></tr></thead><tbody id="sim-rows"></tbody></table></div>
-<div class="button-row"><button type="button" class="button secondary s2-btn" id="sim-prev">Previous page</button><button type="button" class="button primary s2-btn" id="sim-next">Next page</button><label for="sim-page">Page <input id="sim-page" type="number" min="1" max="10000" value="1" style="width:90px"></label><button type="button" class="button secondary s2-btn" id="sim-go">Go to page</button></div></div>
-<p>Try category 2, maximum 20, available only: 11 matches (10 on page 1, 1 on page 2). Reset, then jump directly to page 10 and page 11.</p></div><div class="card s2-card"><h2>Implement the real browser</h2>
-    <article class="workshop-task">
-      <span class="task-tag">TODO 11 · MENU 12 · WorkshopTasks.cs</span>
-      <h3>Optional filters and pagination</h3><p>Compose a query based on inputs. 0 means any category/supplier; blank keyword or price means no filter. Y means active and in stock; N includes all states. Count, order, show SQL preview and return ten rows per page.</p>
-      <p><strong>Predict before running:</strong> If ToListAsync runs before the filters, where will subsequent filtering happen?</p>
-      <details class="s2-details"><summary>Hint</summary><div class="reveal"><p>Use one IQueryable variable. Append only relevant Where calls, count, order, Skip and Take. Execute the page with ToListAsync.</p></div></details>
-      <details class="s2-details"><summary>Reference solution — open after your attempt</summary><div class="reveal"><div class="code-shell"><div class="code-head"><span>WorkshopTasks.cs · TODO 11 body only</span><button class="copy copy-btn" type="button">Copy code</button></div><pre tabindex="0"><code>IQueryable&lt;Item&gt; query = db.Items.AsNoTracking();
+    .Take(pageSize);</code></pre>
+                        </div>
+                        <p>Always order before Skip/Take and use a unique tie-breaker. Count before applying the page
+                            limit.</p>
+                    </div>
+                    <div class="card s2-card">
+                        <h2>Try the browser simulation</h2>
+                        <p class="small">Simulated database: the following list uses the same 120 seed rows as the SQL
+                            script. It demonstrates the logic, not an actual SQL Server connection. Text search is
+                            case-insensitive here; SQL Server collation controls the real query.</p>
+                        <div class="s06-simulator">
+                            <div class="sim-controls">
+                                <label for="sim-keyword">Keyword<input id="sim-keyword" type="text"
+                                        placeholder="All names"></label>
+                                <label for="sim-category">Category<select id="sim-category">
+                                        <option value="0">All</option>
+                                        <option value="1">Stationery</option>
+                                        <option value="2">Electronics</option>
+                                        <option value="3">Accessories</option>
+                                        <option value="4">Art Supplies</option>
+                                        <option value="5">Lab Supplies</option>
+                                        <option value="6">Clearance (empty)</option>
+                                    </select></label>
+                                <label for="sim-supplier">Supplier<select id="sim-supplier">
+                                        <option value="0">All</option>
+                                        <option value="1">Alpha Supplies</option>
+                                        <option value="2">Bright Tech</option>
+                                        <option value="3">Campus Goods</option>
+                                        <option value="4">Creative Source</option>
+                                        <option value="5">Lab Essentials</option>
+                                        <option value="6">Reserve Supplier (empty)</option>
+                                    </select></label>
+                                <label for="sim-max">Maximum price<input id="sim-max" type="number" min="0" step=".01"
+                                        placeholder="Unlimited"></label>
+                                <label class="check"><input id="sim-available" type="checkbox" checked><span>Available
+                                        only (active and stock &gt; 0)</span></label>
+                            </div>
+                            <div class="sim-toolbar"><strong id="sim-count" role="status"></strong><button type="button"
+                                    class="button secondary s2-btn" id="sim-reset">Reset filters</button></div>
+                            <div class="table-wrap s2-table-wrap" tabindex="0">
+                                <table class="s2-table">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Name</th>
+                                            <th>Price</th>
+                                            <th>Stock</th>
+                                            <th>Category</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="sim-rows"></tbody>
+                                </table>
+                            </div>
+                            <div class="button-row"><button type="button" class="button secondary s2-btn"
+                                    id="sim-prev">Previous page</button><button type="button"
+                                    class="button primary s2-btn" id="sim-next">Next page</button><label
+                                    for="sim-page">Page <input id="sim-page" type="number" min="1" max="10000" value="1"
+                                        style="width:90px"></label><button type="button" class="button secondary s2-btn"
+                                    id="sim-go">Go to page</button></div>
+                        </div>
+                        <p>Try category 2, maximum 20, available only: 11 matches (10 on page 1, 1 on page 2). Reset,
+                            then jump directly to page 10 and page 11.</p>
+                    </div>
+                    <div class="card s2-card">
+                        <h2>Implement the real browser</h2>
+                        <article class="workshop-task">
+                            <span class="task-tag">TODO 11 · MENU 12 · WorkshopTasks.cs</span>
+                            <h3>Optional filters and pagination</h3>
+                            <p>Compose a query based on inputs. 0 means any category/supplier; blank keyword or price
+                                means no filter. Y means active and in stock; N includes all states. Count, order, show
+                                SQL preview and return ten rows per page.</p>
+                            <p><strong>Predict before running:</strong> If ToListAsync runs before the filters, where
+                                will subsequent filtering happen?</p>
+                            <details class="s2-details">
+                                <summary>Hint</summary>
+                                <div class="reveal">
+                                    <p>Use one IQueryable variable. Append only relevant Where calls, count, order, Skip
+                                        and Take. Execute the page with ToListAsync.</p>
+                                </div>
+                            </details>
+                            <details class="s2-details">
+                                <summary>Reference solution — open after your attempt</summary>
+                                <div class="reveal">
+                                    <div class="code-shell">
+                                        <div class="code-head"><span>WorkshopTasks.cs · TODO 11 body only</span><button
+                                                class="copy copy-btn" type="button">Copy code</button></div>
+                                        <pre tabindex="0"><code>IQueryable&lt;Item&gt; query = db.Items.AsNoTracking();
 if (keyword.Length &gt; 0) query = query.Where(i =&gt; i.Name.Contains(keyword));
 if (categoryId &gt; 0) query = query.Where(i =&gt; i.CategoryId == categoryId);
 if (supplierId &gt; 0) query = query.Where(i =&gt; i.SupplierId == supplierId);
@@ -161,27 +517,128 @@ var items = await pageQuery.ToListAsync();
 int totalPages = (int)Math.Ceiling(total / (double)pageSize);
 Console.WriteLine($&quot;Total matches: {total} | Page: {page} of {totalPages}&quot;);
 if (items.Count == 0) Console.WriteLine(&quot;No items on this page.&quot;);
-Reports.PrintItems(items);</code></pre></div><p>Replace only the statements inside the START/END markers. Keep the supplied method signature and input logic.</p></div></details>
-      <div class="s06-outcome"><h3>Verify your work</h3><p>On fresh data: blank filters, available Y → 97 matches, 10 pages. Page 1 starts A5 Notepad, Pen, Craft Knife. Page 2 begins Specimen Labels, Notebook, Key Ring. Page 10 has seven rows; page 11 is empty. Available N → 120 matches in 12 pages. Try category 2 + max 20 + available Y → 11 matches.</p></div>
-      <label class="check"><input type="checkbox" data-save="task-11"><span>I ran option 12 and checked the result.</span></label>
-    </article></div><aside class="teacher-note s2-note"><img class="s2-note__mascot" src="images/db-mascot-teacher.webp" alt="" width="64" height="64"><div class="s2-note__content"><strong>Session 07 live checkpoint</strong><p>The first 5 minutes of this step complete the 30-minute live window. Finish the browser exercise in the remaining 20 minutes independently, then continue to Steps 04–05.</p></div></aside><footer class="step-footer"><button class="button secondary s2-btn" data-prev >← Previous</button><div class="step-actions"><button class="button s2-btn primary" data-complete="2" aria-pressed="false">✓ Mark step complete</button><button class="button secondary s2-btn" data-next >Next →</button></div></footer></section>
-<section class="lesson" id="s6-panel-3" aria-labelledby="s6-title-3" hidden><div class="panel-head"><span class="section-kicker">SESSION 07 · STEP 04 / 12 · 15 MINUTES</span><h1 id="s6-title-3" tabindex="-1">Build the dashboard</h1><p>Scalar and grouped summaries</p></div><div class="card s2-card"><h2>Choose the result shape</h2><div class="table-wrap s2-table-wrap" tabindex="0" role="region" aria-label="Aggregate operators"><table class="s2-table case-table"><thead><tr><th scope="col">Request</th><th scope="col">Operator</th><th scope="col">Result</th></tr></thead><tbody><tr><td>Does a supplier exist?</td><td>AnyAsync</td><td>bool</td></tr><tr><td>How many items?</td><td>CountAsync</td><td>int</td></tr><tr><td>Total stock</td><td>SumAsync</td><td>int / nullable</td></tr><tr><td>Average price</td><td>Average</td><td>decimal</td></tr><tr><td>Summarize each category</td><td>GroupBy + Select</td><td>Projected rows</td></tr></tbody></table></div>
-<p>Run the supplied option 4 first. Supplier 1 has 25 items and total stock 515. Supplier 6 has no items, so both values are zero.</p>
-<div class="code-shell"><div class="code-head"><span>Worked example · one supplier</span><button class="copy copy-btn" type="button">Copy code</button></div><pre tabindex="0"><code>var query = db.Items.AsNoTracking()
+Reports.PrintItems(items);</code></pre>
+                                    </div>
+                                    <p>Replace only the statements inside the START/END markers. Keep the supplied
+                                        method signature and input logic.</p>
+                                </div>
+                            </details>
+                            <div class="s06-outcome">
+                                <h3>Verify your work</h3>
+                                <p>On fresh data: blank filters, available Y → 97 matches, 10 pages. Page 1 starts A5
+                                    Notepad, Pen, Craft Knife. Page 2 begins Specimen Labels, Notebook, Key Ring. Page
+                                    10 has seven rows; page 11 is empty. Available N → 120 matches in 12 pages. Try
+                                    category 2 + max 20 + available Y → 11 matches.</p>
+                            </div>
+                            <label class="check"><input type="checkbox" data-save="task-11"><span>I ran option 12 and
+                                    checked the result.</span></label>
+                        </article>
+                    </div>
+                    <aside class="teacher-note s2-note"><img class="s2-note__mascot" src="images/db-mascot-teacher.webp"
+                            alt="" width="64" height="64">
+                        <div class="s2-note__content"><strong>Session 07 live checkpoint</strong>
+                            <p>The first 5 minutes of this step complete the 30-minute live window. Finish the browser
+                                exercise in the remaining 20 minutes independently, then continue to Steps 04–05.</p>
+                        </div>
+                    </aside>
+                    <footer class="step-footer"><button class="button secondary s2-btn" data-prev>← Previous</button>
+                        <div class="step-actions"><button class="button s2-btn primary" data-complete="2"
+                                aria-pressed="false">✓ Mark step complete</button><button
+                                class="button secondary s2-btn" data-next>Next →</button></div>
+                    </footer>
+                </section>
+                <section class="lesson" id="s6-panel-3" aria-labelledby="s6-title-3" hidden>
+                    <div class="panel-head"><span class="section-kicker">SESSION 07 · STEP 04 / 12 · 15 MINUTES</span>
+                        <h1 id="s6-title-3" tabindex="-1">Build the dashboard</h1>
+                        <p>Scalar and grouped summaries</p>
+                    </div>
+                    <div class="card s2-card">
+                        <h2>Choose the result shape</h2>
+                        <div class="table-wrap s2-table-wrap" tabindex="0" role="region"
+                            aria-label="Aggregate operators">
+                            <table class="s2-table case-table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Request</th>
+                                        <th scope="col">Operator</th>
+                                        <th scope="col">Result</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Does a supplier exist?</td>
+                                        <td>AnyAsync</td>
+                                        <td>bool</td>
+                                    </tr>
+                                    <tr>
+                                        <td>How many items?</td>
+                                        <td>CountAsync</td>
+                                        <td>int</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total stock</td>
+                                        <td>SumAsync</td>
+                                        <td>int / nullable</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Average price</td>
+                                        <td>Average</td>
+                                        <td>decimal</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Summarize each category</td>
+                                        <td>GroupBy + Select</td>
+                                        <td>Projected rows</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>Run the supplied option 4 first. Supplier 1 has 25 items and total stock 515. Supplier 6 has
+                            no items, so both values are zero.</p>
+                        <div class="code-shell">
+                            <div class="code-head"><span>Worked example · one supplier</span><button
+                                    class="copy copy-btn" type="button">Copy code</button></div>
+                            <pre tabindex="0"><code>var query = db.Items.AsNoTracking()
     .Where(i =&gt; i.SupplierId == supplierId);
 int count = await query.CountAsync();
-int stock = await query.SumAsync(i =&gt; (int?)i.Stock) ?? 0;</code></pre></div>
-<p>The nullable sum and fallback explicitly handle no matching rows. This report counts the stock in all records, including inactive ones.</p></div><div class="card s2-card"><h2>Build a grouped report</h2><div class="code-shell"><div class="code-head"><span>Familiar SQL</span><button class="copy copy-btn" type="button">Copy code</button></div><pre tabindex="0"><code>SELECT CategoryId, COUNT(*) AS ItemCount,
+int stock = await query.SumAsync(i =&gt; (int?)i.Stock) ?? 0;</code></pre>
+                        </div>
+                        <p>The nullable sum and fallback explicitly handle no matching rows. This report counts the
+                            stock in all records, including inactive ones.</p>
+                    </div>
+                    <div class="card s2-card">
+                        <h2>Build a grouped report</h2>
+                        <div class="code-shell">
+                            <div class="code-head"><span>Familiar SQL</span><button class="copy copy-btn"
+                                    type="button">Copy code</button></div>
+                            <pre tabindex="0"><code>SELECT CategoryId, COUNT(*) AS ItemCount,
        SUM(Stock) AS TotalStock, AVG(UnitPrice) AS AveragePrice
 FROM dbo.Items
 GROUP BY CategoryId
-ORDER BY CategoryId;</code></pre></div>
-    <article class="workshop-task">
-      <span class="task-tag">TODO 12 · MENU 13 · WorkshopTasks.cs</span>
-      <h3>Category dashboard</h3><p>Group Item rows by CategoryId and project count, sum of stock and average unit price per group.</p>
-      <p><strong>Predict before running:</strong> Why does empty category 6 appear in the Categories table but not this grouped result?</p>
-      <details class="s2-details"><summary>Hint</summary><div class="reveal"><p>Start from Items, GroupBy(i => i.CategoryId), then Select an anonymous object using g.Key and aggregate methods. Order and execute.</p></div></details>
-      <details class="s2-details"><summary>Reference solution — open after your attempt</summary><div class="reveal"><div class="code-shell"><div class="code-head"><span>WorkshopTasks.cs · TODO 12 body only</span><button class="copy copy-btn" type="button">Copy code</button></div><pre tabindex="0"><code>var summary = await db.Items.AsNoTracking()
+ORDER BY CategoryId;</code></pre>
+                        </div>
+                        <article class="workshop-task">
+                            <span class="task-tag">TODO 12 · MENU 13 · WorkshopTasks.cs</span>
+                            <h3>Category dashboard</h3>
+                            <p>Group Item rows by CategoryId and project count, sum of stock and average unit price per
+                                group.</p>
+                            <p><strong>Predict before running:</strong> Why does empty category 6 appear in the
+                                Categories table but not this grouped result?</p>
+                            <details class="s2-details">
+                                <summary>Hint</summary>
+                                <div class="reveal">
+                                    <p>Start from Items, GroupBy(i => i.CategoryId), then Select an anonymous object
+                                        using g.Key and aggregate methods. Order and execute.</p>
+                                </div>
+                            </details>
+                            <details class="s2-details">
+                                <summary>Reference solution — open after your attempt</summary>
+                                <div class="reveal">
+                                    <div class="code-shell">
+                                        <div class="code-head"><span>WorkshopTasks.cs · TODO 12 body only</span><button
+                                                class="copy copy-btn" type="button">Copy code</button></div>
+                                        <pre
+                                            tabindex="0"><code>var summary = await db.Items.AsNoTracking()
     .GroupBy(i =&gt; i.CategoryId)
     .Select(g =&gt; new
     {
@@ -192,24 +649,108 @@ ORDER BY CategoryId;</code></pre></div>
     .OrderBy(g =&gt; g.CategoryId)
     .ToListAsync();
 foreach (var row in summary)
-    Console.WriteLine($&quot;{row.CategoryId} | {row.ItemCount} | {row.TotalStock} | {row.AveragePrice:F2}&quot;);</code></pre></div><p>Replace only the statements inside the START/END markers. Keep the supplied method signature and input logic.</p></div></details>
-      <div class="s06-outcome"><h3>Verify your work</h3><p>Fresh seed groups: each of categories 1–5 has 24 items. Stock totals are 475, 404, 367, 493 and 470 respectively. Category 6 has no matching items and no group.</p></div>
-      <label class="check"><input type="checkbox" data-save="task-12"><span>I ran option 13 and checked the result.</span></label>
-    </article></div><footer class="step-footer"><button class="button secondary s2-btn" data-prev >← Previous</button><div class="step-actions"><button class="button s2-btn primary" data-complete="3" aria-pressed="false">✓ Mark step complete</button><button class="button secondary s2-btn" data-next >Next →</button></div></footer></section>
-<section class="lesson" id="s6-panel-4" aria-labelledby="s6-title-4" hidden><div class="panel-head"><span class="section-kicker">SESSION 07 · STEP 05 / 12 · 25 MINUTES</span><h1 id="s6-title-4" tabindex="-1">CRUD and AddRange</h1><p>Practice records for the next block</p></div><div class="card s2-card"><h2>Read and write across entity sets</h2>
-<p>Now use the familiar CRUD logic in the supplied methods. The same DbContext coordinates Items, Categories and Suppliers.</p>
-<div class="table-wrap s2-table-wrap" tabindex="0" role="region" aria-label="Practice CRUD"><table class="s2-table case-table"><thead><tr><th scope="col">Option</th><th scope="col">Your action</th></tr></thead><tbody><tr><td>9</td><td>Create Workshop Materials (your practice category)</td></tr><tr><td>10</td><td>Create Local Workshop supplier, city Gaza</td></tr><tr><td>6</td><td>Create a spare item Desk Lamp, price 19.50, stock 3; seed category 1 and your new supplier</td></tr><tr><td>5</td><td>Find the spare item by its generated Id; test a missing Id</td></tr><tr><td>7</td><td>Update the spare item to price 21.00, stock 5</td></tr><tr><td>1</td><td>Verify stored values</td></tr></tbody></table></div><div class="code-shell"><div class="code-head"><span>Worked method · creating a category</span><button class="copy copy-btn" type="button">Copy code</button></div><pre tabindex="0"><code>var category = new Category { Name = name };
+    Console.WriteLine($&quot;{row.CategoryId} | {row.ItemCount} | {row.TotalStock} | {row.AveragePrice:F2}&quot;);</code></pre>
+                                    </div>
+                                    <p>Replace only the statements inside the START/END markers. Keep the supplied
+                                        method signature and input logic.</p>
+                                </div>
+                            </details>
+                            <div class="s06-outcome">
+                                <h3>Verify your work</h3>
+                                <p>Fresh seed groups: each of categories 1–5 has 24 items. Stock totals are 475, 404,
+                                    367, 493 and 470 respectively. Category 6 has no matching items and no group.</p>
+                            </div>
+                            <label class="check"><input type="checkbox" data-save="task-12"><span>I ran option 13 and
+                                    checked the result.</span></label>
+                        </article>
+                    </div>
+                    <footer class="step-footer"><button class="button secondary s2-btn" data-prev>← Previous</button>
+                        <div class="step-actions"><button class="button s2-btn primary" data-complete="3"
+                                aria-pressed="false">✓ Mark step complete</button><button
+                                class="button secondary s2-btn" data-next>Next →</button></div>
+                    </footer>
+                </section>
+                <section class="lesson" id="s6-panel-4" aria-labelledby="s6-title-4" hidden>
+                    <div class="panel-head"><span class="section-kicker">SESSION 07 · STEP 05 / 12 · 25 MINUTES</span>
+                        <h1 id="s6-title-4" tabindex="-1">CRUD and AddRange</h1>
+                        <p>Practice records for the next block</p>
+                    </div>
+                    <div class="card s2-card">
+                        <h2>Read and write across entity sets</h2>
+                        <p>Now use the familiar CRUD logic in the supplied methods. The same DbContext coordinates
+                            Items, Categories and Suppliers.</p>
+                        <div class="table-wrap s2-table-wrap" tabindex="0" role="region" aria-label="Practice CRUD">
+                            <table class="s2-table case-table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Option</th>
+                                        <th scope="col">Your action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Create Workshop Materials (your practice category)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Create Local Workshop supplier, city Gaza</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Create a spare item Desk Lamp, price 19.50, stock 3; seed category 1 and
+                                            your new supplier</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Find the spare item by its generated Id; test a missing Id</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Update the spare item to price 21.00, stock 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Verify stored values</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="code-shell">
+                            <div class="code-head"><span>Worked method · creating a category</span><button
+                                    class="copy copy-btn" type="button">Copy code</button></div>
+                            <pre tabindex="0"><code>var category = new Category { Name = name };
 db.Categories.Add(category);
 await db.SaveChangesAsync();
-Console.WriteLine($&quot;Created category ID: {category.Id}&quot;);</code></pre></div>
-<p>Options 4–11 have working examples from the earlier design. Read and run them; you do not need to retype repetitive CRUD. Creating an Item validates existing CategoryId and SupplierId using AnyAsync before saving.</p>
-</div><div class="card s2-card"><h2>Create two related items in one save</h2>
-    <article class="workshop-task">
-      <span class="task-tag">TODO 13 · MENU 14 · WorkshopTasks.cs</span>
-      <h3>Create a practice pair</h3><p>Use the category and supplier you created. Create Workshop Ruler (2.50, stock 10) and Workshop Eraser (1.50, stock 20), both active. AddRange then save once.</p>
-      <p><strong>Predict before running:</strong> Do the two items already exist in SQL Server immediately after AddRange?</p>
-      <details class="s2-details"><summary>Hint</summary><div class="reveal"><p>Create a List&lt;Item&gt; with two new objects; do not set the identity Id. Assign both FK IDs and call AddRange.</p></div></details>
-      <details class="s2-details"><summary>Reference solution — open after your attempt</summary><div class="reveal"><div class="code-shell"><div class="code-head"><span>WorkshopTasks.cs · TODO 13 body only</span><button class="copy copy-btn" type="button">Copy code</button></div><pre tabindex="0"><code>var items = new List&lt;Item&gt;
+Console.WriteLine($&quot;Created category ID: {category.Id}&quot;);</code></pre>
+                        </div>
+                        <p>Options 4–11 have working examples from the earlier design. Read and run them; you do not
+                            need to retype repetitive CRUD. Creating an Item validates existing CategoryId and
+                            SupplierId using AnyAsync before saving.</p>
+                    </div>
+                    <div class="card s2-card">
+                        <h2>Create two related items in one save</h2>
+                        <article class="workshop-task">
+                            <span class="task-tag">TODO 13 · MENU 14 · WorkshopTasks.cs</span>
+                            <h3>Create a practice pair</h3>
+                            <p>Use the category and supplier you created. Create Workshop Ruler (2.50, stock 10) and
+                                Workshop Eraser (1.50, stock 20), both active. AddRange then save once.</p>
+                            <p><strong>Predict before running:</strong> Do the two items already exist in SQL Server
+                                immediately after AddRange?</p>
+                            <details class="s2-details">
+                                <summary>Hint</summary>
+                                <div class="reveal">
+                                    <p>Create a List&lt;Item&gt; with two new objects; do not set the identity Id.
+                                        Assign both FK IDs and call AddRange.</p>
+                                </div>
+                            </details>
+                            <details class="s2-details">
+                                <summary>Reference solution — open after your attempt</summary>
+                                <div class="reveal">
+                                    <div class="code-shell">
+                                        <div class="code-head"><span>WorkshopTasks.cs · TODO 13 body only</span><button
+                                                class="copy copy-btn" type="button">Copy code</button></div>
+                                        <pre tabindex="0"><code>var items = new List&lt;Item&gt;
 {
     new() { Name = &quot;Workshop Ruler&quot;, UnitPrice = 2.50m, Stock = 10,
         IsActive = true, CategoryId = categoryId, SupplierId = supplierId },
@@ -220,36 +761,153 @@ db.Items.AddRange(items);
 Console.WriteLine($&quot;Before save: {db.Entry(items[0]).State}, {db.Entry(items[1]).State}&quot;);
 int affected = await db.SaveChangesAsync();
 Console.WriteLine($&quot;State entries written: {affected}&quot;);
-Reports.PrintItems(items);</code></pre></div><p>Replace only the statements inside the START/END markers. Keep the supplied method signature and input logic.</p></div></details>
-      <div class="s06-outcome"><h3>Verify your work</h3><p>Both generated IDs are greater than 120; both states are Added before saving. Option 1 shows both rows. Keep them for the rest of the workshop.</p></div>
-      <label class="check"><input type="checkbox" data-save="task-13"><span>I ran option 14 and checked the result.</span></label>
-    </article></div><div class="card s2-card"><h2>Save your work for the next session</h2>
-<p>Record the IDs below; these notes are saved on this device only. Do not delete your category or the two items until Step 12.</p>
-<div class="pair-records"><label>Practice category ID<input type="text" inputmode="numeric" data-save="category-id" placeholder="Actual generated ID"></label><label>Practice supplier ID<input type="text" inputmode="numeric" data-save="supplier-id" placeholder="Actual generated ID"></label><label>Spare item ID<input type="text" inputmode="numeric" data-save="spare-id" placeholder="Actual generated ID"></label><label>Ruler and eraser IDs<input type="text" data-save="pair-ids" placeholder="Two actual IDs"></label></div>
-<p>Keep the same project directory and database for Session 08. Re-run only option 1 at the next lesson; don't create duplicate practice records just to restart.</p>
-</div><footer class="step-footer"><button class="button secondary s2-btn" data-prev >← Previous</button><div class="step-actions"><button class="button s2-btn primary" data-complete="4" aria-pressed="false">✓ Mark step complete</button><button class="button secondary s2-btn" data-next >Next →</button></div></footer></section>
-<section class="lesson" id="s6-panel-5" aria-labelledby="s6-title-5" hidden><div class="panel-head"><span class="section-kicker">SEPARATE QUIZ · STEP 06 / 12 · 15 MINUTES (NOT IN PRACTICE TIME)</span><h1 id="s6-title-5" tabindex="-1">Prior learning quiz</h1><p>Instructor checkpoint</p></div><div class="card s2-card"><h2>Session 08 starts here</h2>
-<div class="s78-quiz"><span class="block-badge">15 MINUTES · 12 QUESTIONS</span><h3>Prior learning quiz</h3><p>Your instructor will provide the quiz separately. It checks the concepts taught in Sessions 04–07 and essential earlier prerequisites.</p><ul><li>ADO.NET write operation and EF Core setup.</li><li>LINQ result types, query execution, projection, paging and grouping.</li><li>CRUD, generated keys, tracking, foreign key validity and saving multiple new entities.</li></ul><p>No Join or advanced update technique will be assessed before it is taught.</p></div>
-<p>After submitting the quiz, reopen your existing shop solution and keep the previously created IDs ready. Continue to Step 07.</p>
-</div><aside class="teacher-note s2-note"><img class="s2-note__mascot" src="images/db-mascot-teacher.webp" alt="" width="64" height="64"><div class="s2-note__content"><strong>This is a checkpoint</strong><p>Quiz instructions will come from your instructor. No answer key or graded questions are included on this student page.</p></div></aside><footer class="step-footer"><button class="button secondary s2-btn" data-prev >← Previous</button><div class="step-actions"><button class="button s2-btn primary" data-complete="5" aria-pressed="false">✓ Mark step complete</button><button class="button secondary s2-btn" data-next >Next →</button></div></footer></section>
-<section class="lesson" id="s6-panel-6" aria-labelledby="s6-title-6" hidden><div class="panel-head"><span class="section-kicker">SESSION 08 · STEP 07 / 12 · 12 MINUTES</span><h1 id="s6-title-6" tabindex="-1">Join related tables</h1><p>Project names and values</p></div><div class="card s2-card"><h2>From foreign keys to readable reports</h2>
-<p>Option 1 currently prints CategoryId and SupplierId. A customer report needs names. Use a familiar SQL JOIN and its LINQ equivalent.</p>
-<div class="code-shell"><div class="code-head"><span>SQL · three related tables</span><button class="copy copy-btn" type="button">Copy code</button></div><pre tabindex="0"><code>SELECT i.Name, i.UnitPrice, c.Name AS CategoryName, s.Name AS SupplierName
+Reports.PrintItems(items);</code></pre>
+                                    </div>
+                                    <p>Replace only the statements inside the START/END markers. Keep the supplied
+                                        method signature and input logic.</p>
+                                </div>
+                            </details>
+                            <div class="s06-outcome">
+                                <h3>Verify your work</h3>
+                                <p>Both generated IDs are greater than 120; both states are Added before saving. Option
+                                    1 shows both rows. Keep them for the rest of the workshop.</p>
+                            </div>
+                            <label class="check"><input type="checkbox" data-save="task-13"><span>I ran option 14 and
+                                    checked the result.</span></label>
+                        </article>
+                    </div>
+                    <div class="card s2-card">
+                        <h2>Save your work for the next session</h2>
+                        <p>Record the IDs below; these notes are saved on this device only. Do not delete your category
+                            or the two items until Step 12.</p>
+                        <div class="pair-records"><label>Practice category ID<input type="text" inputmode="numeric"
+                                    data-save="category-id" placeholder="Actual generated ID"></label><label>Practice
+                                supplier ID<input type="text" inputmode="numeric" data-save="supplier-id"
+                                    placeholder="Actual generated ID"></label><label>Spare item ID<input type="text"
+                                    inputmode="numeric" data-save="spare-id"
+                                    placeholder="Actual generated ID"></label><label>Ruler and eraser IDs<input
+                                    type="text" data-save="pair-ids" placeholder="Two actual IDs"></label></div>
+                        <p>Keep the same project directory and database for Session 08. Re-run only option 1 at the next
+                            lesson; don't create duplicate practice records just to restart.</p>
+                    </div>
+                    <footer class="step-footer"><button class="button secondary s2-btn" data-prev>← Previous</button>
+                        <div class="step-actions"><button class="button s2-btn primary" data-complete="4"
+                                aria-pressed="false">✓ Mark step complete</button><button
+                                class="button secondary s2-btn" data-next>Next →</button></div>
+                    </footer>
+                </section>
+                <section class="lesson" id="s6-panel-5" aria-labelledby="s6-title-5" hidden>
+                    <div class="panel-head"><span class="section-kicker">SEPARATE QUIZ · STEP 06 . 30 MINUTES (NOT IN
+                            PRACTICE TIME)</span>
+                        <h1 id="s6-title-5" tabindex="-1">Prior learning quiz</h1>
+                        <p>Instructor checkpoint</p>
+                    </div>
+                    <div class="card s2-card">
+                        <h2>Session 08 starts here</h2>
+                        <div class="s78-quiz"><span class="block-badge">15 MINUTES · 12 QUESTIONS</span>
+                            <h3>Prior learning quiz</h3>
+                            <p>Your instructor will provide the quiz separately. It checks the concepts taught in
+                                Sessions 03–05 and essential earlier prerequisites.</p>
+                            <ul>
+                                <li>ADO.NET write operation and EF Core setup.</li>
+                                <li>LINQ result types, query execution, projection, and grouping.</li>
+                            </ul>
+                        </div>
+                        <p>After submitting the quiz, reopen your existing shop solution and keep the previously created
+                            IDs ready. Continue to Step 07.</p>
+                    </div>
+                    <aside class="teacher-note s2-note"><img class="s2-note__mascot" src="images/db-mascot-teacher.webp"
+                            alt="" width="64" height="64">
+
+                    </aside>
+                    <footer class="step-footer"><button class="button secondary s2-btn" data-prev>← Previous</button>
+                        <div class="step-actions"><button class="button s2-btn primary" data-complete="5"
+                                aria-pressed="false">✓ Mark step complete</button><button
+                                class="button secondary s2-btn" data-next>Next →</button></div>
+                    </footer>
+                </section>
+                <section class="lesson" id="s6-panel-6" aria-labelledby="s6-title-6" hidden>
+                    <div class="panel-head"><span class="section-kicker">SESSION 08 · STEP 07 / 12 · 12 MINUTES</span>
+                        <h1 id="s6-title-6" tabindex="-1">Join related tables</h1>
+                        <p>Project names and values</p>
+                    </div>
+                    <div class="card s2-card">
+                        <h2>From foreign keys to readable reports</h2>
+                        <p>Option 1 currently prints CategoryId and SupplierId. A customer report needs names. Use a
+                            familiar SQL JOIN and its LINQ equivalent.</p>
+                        <div class="code-shell">
+                            <div class="code-head"><span>SQL · three related tables</span><button class="copy copy-btn"
+                                    type="button">Copy code</button></div>
+                            <pre tabindex="0"><code>SELECT i.Name, i.UnitPrice, c.Name AS CategoryName, s.Name AS SupplierName
 FROM dbo.Items AS i
 JOIN dbo.Categories AS c ON i.CategoryId = c.Id
-JOIN dbo.Suppliers AS s ON i.SupplierId = s.Id;</code></pre></div><div class="code-shell"><div class="code-head"><span>LINQ · one join</span><button class="copy copy-btn" type="button">Copy code</button></div><pre tabindex="0"><code>var query = db.Items.AsNoTracking()
+JOIN dbo.Suppliers AS s ON i.SupplierId = s.Id;</code></pre>
+                        </div>
+                        <div class="code-shell">
+                            <div class="code-head"><span>LINQ · one join</span><button class="copy copy-btn"
+                                    type="button">Copy code</button></div>
+                            <pre tabindex="0"><code>var query = db.Items.AsNoTracking()
     .Join(db.Categories,
         i =&gt; i.CategoryId,
         c =&gt; c.Id,
-        (i, c) =&gt; new { Item = i, CategoryName = c.Name });</code></pre></div><div class="table-wrap s2-table-wrap" tabindex="0" role="region" aria-label="Join parameters"><table class="s2-table case-table"><thead><tr><th scope="col">Join argument</th><th scope="col">Meaning</th></tr></thead><tbody><tr><td>db.Categories</td><td>Second query source</td></tr><tr><td>i =&gt; i.CategoryId</td><td>Key from Items</td></tr><tr><td>c =&gt; c.Id</td><td>Matching key from Categories</td></tr><tr><td>(i, c) =&gt; new { ... }</td><td>Shape the result for matching rows</td></tr></tbody></table></div>
-<p>The second Join connects the supplier key from that intermediate result to Supplier.Id. Project only values needed in the final report; no navigation properties or Include required.</p>
-</div><div class="card s2-card"><h2>Implement the linked report</h2>
-    <article class="workshop-task">
-      <span class="task-tag">TODO 18 · MENU 19 · WorkshopTasks.cs</span>
-      <h3>Join three tables</h3><p>Return item ID, item name, price, category name and supplier name, ordered by Item ID. Include all stored items in this administration report.</p>
-      <p><strong>Predict before running:</strong> Will an INNER JOIN return unmatched rows? Why do the required valid FKs make every Item match here?</p>
-      <details class="s2-details"><summary>Hint</summary><div class="reveal"><p>Use the first join example; chain a second Join with the intermediate row and SupplierId. Finish with ordering and ToListAsync.</p></div></details>
-      <details class="s2-details"><summary>Reference solution — open after your attempt</summary><div class="reveal"><div class="code-shell"><div class="code-head"><span>WorkshopTasks.cs · TODO 18 body only</span><button class="copy copy-btn" type="button">Copy code</button></div><pre tabindex="0"><code>var rows = await db.Items.AsNoTracking()
+        (i, c) =&gt; new { Item = i, CategoryName = c.Name });</code></pre>
+                        </div>
+                        <div class="table-wrap s2-table-wrap" tabindex="0" role="region" aria-label="Join parameters">
+                            <table class="s2-table case-table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Join argument</th>
+                                        <th scope="col">Meaning</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>db.Categories</td>
+                                        <td>Second query source</td>
+                                    </tr>
+                                    <tr>
+                                        <td>i =&gt; i.CategoryId</td>
+                                        <td>Key from Items</td>
+                                    </tr>
+                                    <tr>
+                                        <td>c =&gt; c.Id</td>
+                                        <td>Matching key from Categories</td>
+                                    </tr>
+                                    <tr>
+                                        <td>(i, c) =&gt; new { ... }</td>
+                                        <td>Shape the result for matching rows</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>The second Join connects the supplier key from that intermediate result to Supplier.Id.
+                            Project only values needed in the final report; no navigation properties or Include
+                            required.</p>
+                    </div>
+                    <div class="card s2-card">
+                        <h2>Implement the linked report</h2>
+                        <article class="workshop-task">
+                            <span class="task-tag">TODO 18 · MENU 19 · WorkshopTasks.cs</span>
+                            <h3>Join three tables</h3>
+                            <p>Return item ID, item name, price, category name and supplier name, ordered by Item ID.
+                                Include all stored items in this administration report.</p>
+                            <p><strong>Predict before running:</strong> Will an INNER JOIN return unmatched rows? Why do
+                                the required valid FKs make every Item match here?</p>
+                            <details class="s2-details">
+                                <summary>Hint</summary>
+                                <div class="reveal">
+                                    <p>Use the first join example; chain a second Join with the intermediate row and
+                                        SupplierId. Finish with ordering and ToListAsync.</p>
+                                </div>
+                            </details>
+                            <details class="s2-details">
+                                <summary>Reference solution — open after your attempt</summary>
+                                <div class="reveal">
+                                    <div class="code-shell">
+                                        <div class="code-head"><span>WorkshopTasks.cs · TODO 18 body only</span><button
+                                                class="copy copy-btn" type="button">Copy code</button></div>
+                                        <pre
+                                            tabindex="0"><code>var rows = await db.Items.AsNoTracking()
     .Join(db.Categories.AsNoTracking(),
         i =&gt; i.CategoryId, c =&gt; c.Id,
         (i, c) =&gt; new { Item = i, CategoryName = c.Name })
@@ -262,20 +920,69 @@ JOIN dbo.Suppliers AS s ON i.SupplierId = s.Id;</code></pre></div><div class="co
         })
     .OrderBy(row =&gt; row.Id).ToListAsync();
 foreach (var row in rows)
-    Console.WriteLine($&quot;{row.Id} | {row.Name} | {row.UnitPrice:F2} | {row.CategoryName} | {row.SupplierName}&quot;);</code></pre></div><p>Replace only the statements inside the START/END markers. Keep the supplied method signature and input logic.</p></div></details>
-      <div class="s06-outcome"><h3>Verify your work</h3><p>Notebook → Stationery → Alpha Supplies. Your new practice items should show the names of the newly created category and supplier.</p></div>
-      <label class="check"><input type="checkbox" data-save="task-18"><span>I ran option 19 and checked the result.</span></label>
-    </article></div><footer class="step-footer"><button class="button secondary s2-btn" data-prev >← Previous</button><div class="step-actions"><button class="button s2-btn primary" data-complete="6" aria-pressed="false">✓ Mark step complete</button><button class="button secondary s2-btn" data-next >Next →</button></div></footer></section>
-<section class="lesson" id="s6-panel-7" aria-labelledby="s6-title-7" hidden><div class="panel-head"><span class="section-kicker">SESSION 08 · STEP 08 / 12 · 10 MINUTES</span><h1 id="s6-title-7" tabindex="-1">Change and protect relationships</h1><p>Foreign key updates and safe deletion</p></div><div class="card s2-card"><h2>A foreign key controls the relationship</h2>
-<p>Changing a category on an existing Item is a data change, not a schema change. The new ID must exist in Categories.</p>
-<div class="s06-flow"><div class="s06-flow-node"><span>1</span><strong>Read item</strong><p>Retrieve the practice row by ID.</p></div><div class="s06-flow-node"><span>2</span><strong>Validate parent</strong><p>Use AnyAsync for the new CategoryId.</p></div><div class="s06-flow-node"><span>3</span><strong>Modify &amp; save</strong><p>Assign CategoryId and verify with the joined report.</p></div></div>
+    Console.WriteLine($&quot;{row.Id} | {row.Name} | {row.UnitPrice:F2} | {row.CategoryName} | {row.SupplierName}&quot;);</code></pre>
+                                    </div>
+                                    <p>Replace only the statements inside the START/END markers. Keep the supplied
+                                        method signature and input logic.</p>
+                                </div>
+                            </details>
+                            <div class="s06-outcome">
+                                <h3>Verify your work</h3>
+                                <p>Notebook → Stationery → Alpha Supplies. Your new practice items should show the names
+                                    of the newly created category and supplier.</p>
+                            </div>
+                            <label class="check"><input type="checkbox" data-save="task-18"><span>I ran option 19 and
+                                    checked the result.</span></label>
+                        </article>
+                    </div>
+                    <footer class="step-footer"><button class="button secondary s2-btn" data-prev>← Previous</button>
+                        <div class="step-actions"><button class="button s2-btn primary" data-complete="6"
+                                aria-pressed="false">✓ Mark step complete</button><button
+                                class="button secondary s2-btn" data-next>Next →</button></div>
+                    </footer>
+                </section>
+                <section class="lesson" id="s6-panel-7" aria-labelledby="s6-title-7" hidden>
+                    <div class="panel-head"><span class="section-kicker">SESSION 08 · STEP 08 / 12 · 10 MINUTES</span>
+                        <h1 id="s6-title-7" tabindex="-1">Change and protect relationships</h1>
+                        <p>Foreign key updates and safe deletion</p>
+                    </div>
+                    <div class="card s2-card">
+                        <h2>A foreign key controls the relationship</h2>
+                        <p>Changing a category on an existing Item is a data change, not a schema change. The new ID
+                            must exist in Categories.</p>
+                        <div class="s06-flow">
+                            <div class="s06-flow-node"><span>1</span><strong>Read item</strong>
+                                <p>Retrieve the practice row by ID.</p>
+                            </div>
+                            <div class="s06-flow-node"><span>2</span><strong>Validate parent</strong>
+                                <p>Use AnyAsync for the new CategoryId.</p>
+                            </div>
+                            <div class="s06-flow-node"><span>3</span><strong>Modify &amp; save</strong>
+                                <p>Assign CategoryId and verify with the joined report.</p>
+                            </div>
+                        </div>
 
-    <article class="workshop-task">
-      <span class="task-tag">TODO 19 · MENU 20 · WorkshopTasks.cs</span>
-      <h3>Reassign an item</h3><p>Move your Workshop Ruler (one practice pair item) to seed category 2. Retain the other item in your original practice category.</p>
-      <p><strong>Predict before running:</strong> Does changing CategoryId update the item ID or only its reference?</p>
-      <details class="s2-details"><summary>Hint</summary><div class="reveal"><p>Find the item, check new category with AnyAsync, change the scalar FK, and save.</p></div></details>
-      <details class="s2-details"><summary>Reference solution — open after your attempt</summary><div class="reveal"><div class="code-shell"><div class="code-head"><span>WorkshopTasks.cs · TODO 19 body only</span><button class="copy copy-btn" type="button">Copy code</button></div><pre tabindex="0"><code>var item = await db.Items.FindAsync(id);
+                        <article class="workshop-task">
+                            <span class="task-tag">TODO 19 · MENU 20 · WorkshopTasks.cs</span>
+                            <h3>Reassign an item</h3>
+                            <p>Move your Workshop Ruler (one practice pair item) to seed category 2. Retain the other
+                                item in your original practice category.</p>
+                            <p><strong>Predict before running:</strong> Does changing CategoryId update the item ID or
+                                only its reference?</p>
+                            <details class="s2-details">
+                                <summary>Hint</summary>
+                                <div class="reveal">
+                                    <p>Find the item, check new category with AnyAsync, change the scalar FK, and save.
+                                    </p>
+                                </div>
+                            </details>
+                            <details class="s2-details">
+                                <summary>Reference solution — open after your attempt</summary>
+                                <div class="reveal">
+                                    <div class="code-shell">
+                                        <div class="code-head"><span>WorkshopTasks.cs · TODO 19 body only</span><button
+                                                class="copy copy-btn" type="button">Copy code</button></div>
+                                        <pre tabindex="0"><code>var item = await db.Items.FindAsync(id);
 if (item is null) { Console.WriteLine(&quot;Item not found.&quot;); return; }
 if (!await db.Categories.AnyAsync(c =&gt; c.Id == newCategoryId))
 {
@@ -284,18 +991,49 @@ if (!await db.Categories.AnyAsync(c =&gt; c.Id == newCategoryId))
 }
 item.CategoryId = newCategoryId;
 await db.SaveChangesAsync();
-Reports.PrintItems(new[] { item });</code></pre></div><p>Replace only the statements inside the START/END markers. Keep the supplied method signature and input logic.</p></div></details>
-      <div class="s06-outcome"><h3>Verify your work</h3><p>Option 19 now shows Electronics for that item. Try an invalid category ID (e.g. 999999 if unused); the update is refused.</p></div>
-      <label class="check"><input type="checkbox" data-save="task-19"><span>I ran option 20 and checked the result.</span></label>
-    </article></div><div class="card s2-card"><h2>Protect dependent rows</h2>
-<p>A category referenced by an Item should not be removed. The application lookup gives clear feedback; the SQL Server FK constraint remains the final authority. Inactive items also reference categories.</p>
+Reports.PrintItems(new[] { item });</code></pre>
+                                    </div>
+                                    <p>Replace only the statements inside the START/END markers. Keep the supplied
+                                        method signature and input logic.</p>
+                                </div>
+                            </details>
+                            <div class="s06-outcome">
+                                <h3>Verify your work</h3>
+                                <p>Option 19 now shows Electronics for that item. Try an invalid category ID (e.g.
+                                    999999 if unused); the update is refused.</p>
+                            </div>
+                            <label class="check"><input type="checkbox" data-save="task-19"><span>I ran option 20 and
+                                    checked the result.</span></label>
+                        </article>
+                    </div>
+                    <div class="card s2-card">
+                        <h2>Protect dependent rows</h2>
+                        <p>A category referenced by an Item should not be removed. The application lookup gives clear
+                            feedback; the SQL Server FK constraint remains the final authority. Inactive items also
+                            reference categories.</p>
 
-    <article class="workshop-task">
-      <span class="task-tag">TODO 20 · MENU 21 · WorkshopTasks.cs</span>
-      <h3>Guard category deletion</h3><p>Attempt to remove the practice category while your remaining pair item references it. Refuse the deletion if any matching Item exists. For an empty practice category, confirm before deleting.</p>
-      <p><strong>Predict before running:</strong> What if the item referencing this category is inactive?</p>
-      <details class="s2-details"><summary>Hint</summary><div class="reveal"><p>Find the category, AnyAsync(i => i.CategoryId == id), display a blocked message if true; otherwise ask for YES, Remove and save.</p></div></details>
-      <details class="s2-details"><summary>Reference solution — open after your attempt</summary><div class="reveal"><div class="code-shell"><div class="code-head"><span>WorkshopTasks.cs · TODO 20 body only</span><button class="copy copy-btn" type="button">Copy code</button></div><pre tabindex="0"><code>var category = await db.Categories.FindAsync(id);
+                        <article class="workshop-task">
+                            <span class="task-tag">TODO 20 · MENU 21 · WorkshopTasks.cs</span>
+                            <h3>Guard category deletion</h3>
+                            <p>Attempt to remove the practice category while your remaining pair item references it.
+                                Refuse the deletion if any matching Item exists. For an empty practice category, confirm
+                                before deleting.</p>
+                            <p><strong>Predict before running:</strong> What if the item referencing this category is
+                                inactive?</p>
+                            <details class="s2-details">
+                                <summary>Hint</summary>
+                                <div class="reveal">
+                                    <p>Find the category, AnyAsync(i => i.CategoryId == id), display a blocked message
+                                        if true; otherwise ask for YES, Remove and save.</p>
+                                </div>
+                            </details>
+                            <details class="s2-details">
+                                <summary>Reference solution — open after your attempt</summary>
+                                <div class="reveal">
+                                    <div class="code-shell">
+                                        <div class="code-head"><span>WorkshopTasks.cs · TODO 20 body only</span><button
+                                                class="copy copy-btn" type="button">Copy code</button></div>
+                                        <pre tabindex="0"><code>var category = await db.Categories.FindAsync(id);
 if (category is null) { Console.WriteLine(&quot;Category not found.&quot;); return; }
 if (await db.Items.AnyAsync(i =&gt; i.CategoryId == id))
 {
@@ -306,25 +1044,106 @@ Console.Write($&quot;Delete {category.Name}? Type YES: &quot;);
 if (Console.ReadLine() != &quot;YES&quot;) { Console.WriteLine(&quot;Cancelled.&quot;); return; }
 db.Categories.Remove(category);
 await db.SaveChangesAsync();
-Console.WriteLine(&quot;Empty category deleted.&quot;);</code></pre></div><p>Replace only the statements inside the START/END markers. Keep the supplied method signature and input logic.</p></div></details>
-      <div class="s06-outcome"><h3>Verify your work</h3><p>The current practice category is rejected because the eraser still references it. Later in Step 12 after deleting its items, the empty category can be removed.</p></div>
-      <label class="check"><input type="checkbox" data-save="task-20"><span>I ran option 21 and checked the result.</span></label>
-    </article></div><aside class="teacher-note s2-note"><img class="s2-note__mascot" src="images/db-mascot-teacher.webp" alt="" width="64" height="64"><div class="s2-note__content"><strong>Do not delete seed parents</strong><p>Only your created practice category (ID > 6) is eligible. Do not change the relationship configuration, remove the FK, or enable cascade deletion to make a test pass.</p></div></aside><footer class="step-footer"><button class="button secondary s2-btn" data-prev >← Previous</button><div class="step-actions"><button class="button s2-btn primary" data-complete="7" aria-pressed="false">✓ Mark step complete</button><button class="button secondary s2-btn" data-next >Next →</button></div></footer></section>
-<section class="lesson" id="s6-panel-8" aria-labelledby="s6-title-8" hidden><div class="panel-head"><span class="section-kicker">SESSION 08 · STEP 09 / 12 · 10 MINUTES</span><h1 id="s6-title-8" tabindex="-1">Update multiple items</h1><p>Tracking and UpdateRange</p></div><div class="card s2-card"><h2>One context can coordinate multiple changes</h2>
-<p>Run option 11, supplying the two practice item IDs and stock 12. It retrieves tracked entities, edits both, then saves once. No UpdateRange is required for this tracked pattern.</p>
-<div class="code-shell"><div class="code-head"><span>Tracked collection update</span><button class="copy copy-btn" type="button">Copy code</button></div><pre tabindex="0"><code>var items = await db.Items
+Console.WriteLine(&quot;Empty category deleted.&quot;);</code></pre>
+                                    </div>
+                                    <p>Replace only the statements inside the START/END markers. Keep the supplied
+                                        method signature and input logic.</p>
+                                </div>
+                            </details>
+                            <div class="s06-outcome">
+                                <h3>Verify your work</h3>
+                                <p>The current practice category is rejected because the eraser still references it.
+                                    Later in Step 12 after deleting its items, the empty category can be removed.</p>
+                            </div>
+                            <label class="check"><input type="checkbox" data-save="task-20"><span>I ran option 21 and
+                                    checked the result.</span></label>
+                        </article>
+                    </div>
+                    <aside class="teacher-note s2-note"><img class="s2-note__mascot" src="images/db-mascot-teacher.webp"
+                            alt="" width="64" height="64">
+                        <div class="s2-note__content"><strong>Do not delete seed parents</strong>
+                            <p>Only your created practice category (ID > 6) is eligible. Do not change the relationship
+                                configuration, remove the FK, or enable cascade deletion to make a test pass.</p>
+                        </div>
+                    </aside>
+                    <footer class="step-footer"><button class="button secondary s2-btn" data-prev>← Previous</button>
+                        <div class="step-actions"><button class="button s2-btn primary" data-complete="7"
+                                aria-pressed="false">✓ Mark step complete</button><button
+                                class="button secondary s2-btn" data-next>Next →</button></div>
+                    </footer>
+                </section>
+                <section class="lesson" id="s6-panel-8" aria-labelledby="s6-title-8" hidden>
+                    <div class="panel-head"><span class="section-kicker">SESSION 08 · STEP 09 / 12 · 10 MINUTES</span>
+                        <h1 id="s6-title-8" tabindex="-1">Update multiple items</h1>
+                        <p>Tracking and UpdateRange</p>
+                    </div>
+                    <div class="card s2-card">
+                        <h2>One context can coordinate multiple changes</h2>
+                        <p>Run option 11, supplying the two practice item IDs and stock 12. It retrieves tracked
+                            entities, edits both, then saves once. No UpdateRange is required for this tracked pattern.
+                        </p>
+                        <div class="code-shell">
+                            <div class="code-head"><span>Tracked collection update</span><button class="copy copy-btn"
+                                    type="button">Copy code</button></div>
+                            <pre tabindex="0"><code>var items = await db.Items
     .Where(i =&gt; i.Id == firstId || i.Id == secondId).ToListAsync();
 if (items.Count != 2) return;
 foreach (var item in items) item.Stock = stock;
-await db.SaveChangesAsync();</code></pre></div><div class="table-wrap s2-table-wrap" tabindex="0" role="region" aria-label="Tracking comparison"><table class="s2-table case-table"><thead><tr><th scope="col">Approach</th><th scope="col">What EF Core knows</th></tr></thead><tbody><tr><td>Tracked query + assignment</td><td>The context tracks original and current values; save detects changes</td></tr><tr><td>AsNoTracking + assignment</td><td>The objects are not tracked; save alone does not persist their modifications</td></tr><tr><td>UpdateRange(complete objects)</td><td>Explicitly marks existing entities for updates; may mark writable properties modified</td></tr></tbody></table></div>
-<p>SaveChangesAsync returns the number of state entries written, not the number of SQL commands. Several operations can be coordinated in one unit of work.</p>
-</div><div class="card s2-card"><h2>Explicit update of a no-tracking collection</h2>
-    <article class="workshop-task">
-      <span class="task-tag">TODO 14 · MENU 15 · WorkshopTasks.cs</span>
-      <h3>Use UpdateRange in a controlled exercise</h3><p>Retrieve exactly the same two learner-created records using AsNoTracking; ensure both exist. Set stock to 15, call UpdateRange and save once.</p>
-      <p><strong>Predict before running:</strong> If the objects are already tracked, is UpdateRange needed?</p>
-      <details class="s2-details"><summary>Hint</summary><div class="reveal"><p>Observe Entry.State before and after UpdateRange. A Detached entry is not registered until the explicit update call.</p></div></details>
-      <details class="s2-details"><summary>Reference solution — open after your attempt</summary><div class="reveal"><div class="code-shell"><div class="code-head"><span>WorkshopTasks.cs · TODO 14 body only</span><button class="copy copy-btn" type="button">Copy code</button></div><pre tabindex="0"><code>var items = await db.Items.AsNoTracking()
+await db.SaveChangesAsync();</code></pre>
+                        </div>
+                        <div class="table-wrap s2-table-wrap" tabindex="0" role="region"
+                            aria-label="Tracking comparison">
+                            <table class="s2-table case-table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Approach</th>
+                                        <th scope="col">What EF Core knows</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Tracked query + assignment</td>
+                                        <td>The context tracks original and current values; save detects changes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>AsNoTracking + assignment</td>
+                                        <td>The objects are not tracked; save alone does not persist their modifications
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>UpdateRange(complete objects)</td>
+                                        <td>Explicitly marks existing entities for updates; may mark writable properties
+                                            modified</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>SaveChangesAsync returns the number of state entries written, not the number of SQL commands.
+                            Several operations can be coordinated in one unit of work.</p>
+                    </div>
+                    <div class="card s2-card">
+                        <h2>Explicit update of a no-tracking collection</h2>
+                        <article class="workshop-task">
+                            <span class="task-tag">TODO 14 · MENU 15 · WorkshopTasks.cs</span>
+                            <h3>Use UpdateRange in a controlled exercise</h3>
+                            <p>Retrieve exactly the same two learner-created records using AsNoTracking; ensure both
+                                exist. Set stock to 15, call UpdateRange and save once.</p>
+                            <p><strong>Predict before running:</strong> If the objects are already tracked, is
+                                UpdateRange needed?</p>
+                            <details class="s2-details">
+                                <summary>Hint</summary>
+                                <div class="reveal">
+                                    <p>Observe Entry.State before and after UpdateRange. A Detached entry is not
+                                        registered until the explicit update call.</p>
+                                </div>
+                            </details>
+                            <details class="s2-details">
+                                <summary>Reference solution — open after your attempt</summary>
+                                <div class="reveal">
+                                    <div class="code-shell">
+                                        <div class="code-head"><span>WorkshopTasks.cs · TODO 14 body only</span><button
+                                                class="copy copy-btn" type="button">Copy code</button></div>
+                                        <pre tabindex="0"><code>var items = await db.Items.AsNoTracking()
     .Where(i =&gt; i.Id == first || i.Id == second).ToListAsync();
 if (items.Count != 2)
 {
@@ -337,36 +1156,171 @@ db.Items.UpdateRange(items);
 Console.WriteLine($&quot;After registration: {db.Entry(items[0]).State}&quot;);
 int affected = await db.SaveChangesAsync();
 Console.WriteLine($&quot;State entries written: {affected}&quot;);
-Reports.PrintItems(items);</code></pre></div><p>Replace only the statements inside the START/END markers. Keep the supplied method signature and input logic.</p></div></details>
-      <div class="s06-outcome"><h3>Verify your work</h3><p>Both stock values are 15 in option 1. Before registration the state is Detached; after registration it is Modified. Try one nonexistent practice ID: neither should change.</p></div>
-      <label class="check"><input type="checkbox" data-save="task-14"><span>I ran option 15 and checked the result.</span></label>
-    </article></div><aside class="teacher-note s2-note"><img class="s2-note__mascot" src="images/db-mascot-teacher.webp" alt="" width="64" height="64"><div class="s2-note__content"><strong>Not a general web update recipe</strong><p>UpdateRange on full detached entities can overwrite other properties. The example is limited to complete records freshly read in your classroom database. For a web edit, the safer default is to re-read by ID and change only permitted properties (Step 11).</p></div></aside><footer class="step-footer"><button class="button secondary s2-btn" data-prev >← Previous</button><div class="step-actions"><button class="button s2-btn primary" data-complete="8" aria-pressed="false">✓ Mark step complete</button><button class="button secondary s2-btn" data-next >Next →</button></div></footer></section>
-<section class="lesson" id="s6-panel-9" aria-labelledby="s6-title-9" hidden><div class="panel-head"><span class="section-kicker">SESSION 08 · STEP 10 / 12 · 8 MINUTES</span><h1 id="s6-title-9" tabindex="-1">Deactivate and reactivate</h1><p>Soft delete</p></div><div class="card s2-card"><h2>Keep history instead of deleting it</h2><div class="table-wrap s2-table-wrap" tabindex="0" role="region" aria-label="Soft vs hard deletion"><table class="s2-table case-table"><thead><tr><th scope="col">Action</th><th scope="col">Stored row</th><th scope="col">Active catalog</th></tr></thead><tbody><tr><td>Deactivate: IsActive = false</td><td>Still exists</td><td>Excluded by active filter</td></tr><tr><td>Reactivate: IsActive = true</td><td>Still exists</td><td>Included if other conditions match</td></tr><tr><td>Hard delete: Remove + save</td><td>Removed</td><td>No longer exists</td></tr></tbody></table></div>
-<p>IsActive is an application-level convention in this model. EF does not automatically hide it. Administration reports intentionally include inactive rows; active searches test IsActive.</p></div><div class="card s2-card"><h2>Apply the status change</h2>
-    <article class="workshop-task">
-      <span class="task-tag">TODO 15 · MENU 16 · WorkshopTasks.cs</span>
-      <h3>Deactivate and reactivate</h3><p>Set Workshop Ruler inactive using the existing item ID. Confirm behavior, then set it active again.</p>
-      <p><strong>Predict before running:</strong> Will deactivation make a category with an inactive child safe to delete?</p>
-      <details class="s2-details"><summary>Hint</summary><div class="reveal"><p>Retrieve a tracked Item; assign IsActive instead of calling Remove. Save changes.</p></div></details>
-      <details class="s2-details"><summary>Reference solution — open after your attempt</summary><div class="reveal"><div class="code-shell"><div class="code-head"><span>WorkshopTasks.cs · TODO 15 body only</span><button class="copy copy-btn" type="button">Copy code</button></div><pre tabindex="0"><code>var item = await db.Items.FindAsync(id);
+Reports.PrintItems(items);</code></pre>
+                                    </div>
+                                    <p>Replace only the statements inside the START/END markers. Keep the supplied
+                                        method signature and input logic.</p>
+                                </div>
+                            </details>
+                            <div class="s06-outcome">
+                                <h3>Verify your work</h3>
+                                <p>Both stock values are 15 in option 1. Before registration the state is Detached;
+                                    after registration it is Modified. Try one nonexistent practice ID: neither should
+                                    change.</p>
+                            </div>
+                            <label class="check"><input type="checkbox" data-save="task-14"><span>I ran option 15 and
+                                    checked the result.</span></label>
+                        </article>
+                    </div>
+                    <aside class="teacher-note s2-note"><img class="s2-note__mascot" src="images/db-mascot-teacher.webp"
+                            alt="" width="64" height="64">
+                        <div class="s2-note__content"><strong>Not a general web update recipe</strong>
+                            <p>UpdateRange on full detached entities can overwrite other properties. The example is
+                                limited to complete records freshly read in your classroom database. For a web edit, the
+                                safer default is to re-read by ID and change only permitted properties (Step 11).</p>
+                        </div>
+                    </aside>
+                    <footer class="step-footer"><button class="button secondary s2-btn" data-prev>← Previous</button>
+                        <div class="step-actions"><button class="button s2-btn primary" data-complete="8"
+                                aria-pressed="false">✓ Mark step complete</button><button
+                                class="button secondary s2-btn" data-next>Next →</button></div>
+                    </footer>
+                </section>
+                <section class="lesson" id="s6-panel-9" aria-labelledby="s6-title-9" hidden>
+                    <div class="panel-head"><span class="section-kicker">SESSION 08 · STEP 10 / 12 · 8 MINUTES</span>
+                        <h1 id="s6-title-9" tabindex="-1">Deactivate and reactivate</h1>
+                        <p>Soft delete</p>
+                    </div>
+                    <div class="card s2-card">
+                        <h2>Keep history instead of deleting it</h2>
+                        <div class="table-wrap s2-table-wrap" tabindex="0" role="region"
+                            aria-label="Soft vs hard deletion">
+                            <table class="s2-table case-table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Action</th>
+                                        <th scope="col">Stored row</th>
+                                        <th scope="col">Active catalog</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Deactivate: IsActive = false</td>
+                                        <td>Still exists</td>
+                                        <td>Excluded by active filter</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Reactivate: IsActive = true</td>
+                                        <td>Still exists</td>
+                                        <td>Included if other conditions match</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hard delete: Remove + save</td>
+                                        <td>Removed</td>
+                                        <td>No longer exists</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>IsActive is an application-level convention in this model. EF does not automatically hide it.
+                            Administration reports intentionally include inactive rows; active searches test IsActive.
+                        </p>
+                    </div>
+                    <div class="card s2-card">
+                        <h2>Apply the status change</h2>
+                        <article class="workshop-task">
+                            <span class="task-tag">TODO 15 · MENU 16 · WorkshopTasks.cs</span>
+                            <h3>Deactivate and reactivate</h3>
+                            <p>Set Workshop Ruler inactive using the existing item ID. Confirm behavior, then set it
+                                active again.</p>
+                            <p><strong>Predict before running:</strong> Will deactivation make a category with an
+                                inactive child safe to delete?</p>
+                            <details class="s2-details">
+                                <summary>Hint</summary>
+                                <div class="reveal">
+                                    <p>Retrieve a tracked Item; assign IsActive instead of calling Remove. Save changes.
+                                    </p>
+                                </div>
+                            </details>
+                            <details class="s2-details">
+                                <summary>Reference solution — open after your attempt</summary>
+                                <div class="reveal">
+                                    <div class="code-shell">
+                                        <div class="code-head"><span>WorkshopTasks.cs · TODO 15 body only</span><button
+                                                class="copy copy-btn" type="button">Copy code</button></div>
+                                        <pre tabindex="0"><code>var item = await db.Items.FindAsync(id);
 if (item is null) { Console.WriteLine(&quot;Item not found.&quot;); return; }
 item.IsActive = isActive;
 await db.SaveChangesAsync();
-Console.WriteLine($&quot;Active status: {item.IsActive}&quot;);</code></pre></div><p>Replace only the statements inside the START/END markers. Keep the supplied method signature and input logic.</p></div></details>
-      <div class="s06-outcome"><h3>Verify your work</h3><p>Option 1 still shows Ruler with Active False; option 2 with keyword Workshop Ruler no longer finds it. Reactivate with option 16, then search again.</p></div>
-      <label class="check"><input type="checkbox" data-save="task-15"><span>I ran option 16 and checked the result.</span></label>
-    </article></div><footer class="step-footer"><button class="button secondary s2-btn" data-prev >← Previous</button><div class="step-actions"><button class="button s2-btn primary" data-complete="9" aria-pressed="false">✓ Mark step complete</button><button class="button secondary s2-btn" data-next >Next →</button></div></footer></section>
-<section class="lesson" id="s6-panel-10" aria-labelledby="s6-title-10" hidden><div class="panel-head"><span class="section-kicker">SESSION 08 · STEP 11 / 12 · 12 MINUTES</span><h1 id="s6-title-10" tabindex="-1">Edit in a new context</h1><p>Disconnected update</p></div><div class="card s2-card"><h2>The edit page is not one long-lived DbContext</h2>
-<p>Imagine a web user opens an edit page, waits, changes the price, and presses Save later. The read request is already finished when editing occurs.</p>
-<div class="s06-flow"><div class="s06-flow-node"><span>A</span><strong>Read context</strong><p>Read the row without tracking, display it, dispose A.</p></div><div class="s06-flow-node"><span>…</span><strong>Time passes</strong><p>User enters a new price. Only the ID and permitted value are needed for the save.</p></div><div class="s06-flow-node"><span>B</span><strong>Save context</strong><p>Retrieve by ID again, change price, save, dispose B.</p></div></div>
-<p>Object identity is not a database row. Disposing the old DbContext stops its tracking; the new context has its own tracker. Re-query with the primary key rather than sending all edited data indiscriminately.</p>
-</div><div class="card s2-card"><h2>Practise the two-request pattern</h2>
-    <article class="workshop-task">
-      <span class="task-tag">TODO 16 · MENU 17 · WorkshopTasks.cs</span>
-      <h3>Edit with separate contexts</h3><p>In context A, show one practice item via AsNoTracking. Dispose A before asking for the new price. Use context B to find the same ID, update only UnitPrice and save. Verify with a third fresh read.</p>
-      <p><strong>Predict before running:</strong> Why does SaveChangesAsync on a different context not automatically persist edits made to an object from the first context?</p>
-      <details class="s2-details"><summary>Hint</summary><div class="reveal"><p>Use explicit using blocks to mark lifetime. Only after the read block ends call Inputs.TryPrice. A missing row in either request must be handled.</p></div></details>
-      <details class="s2-details"><summary>Reference solution — open after your attempt</summary><div class="reveal"><div class="code-shell"><div class="code-head"><span>WorkshopTasks.cs · TODO 16 body only</span><button class="copy copy-btn" type="button">Copy code</button></div><pre tabindex="0"><code>using (var readDb = new InventoryDbContext(options))
+Console.WriteLine($&quot;Active status: {item.IsActive}&quot;);</code></pre>
+                                    </div>
+                                    <p>Replace only the statements inside the START/END markers. Keep the supplied
+                                        method signature and input logic.</p>
+                                </div>
+                            </details>
+                            <div class="s06-outcome">
+                                <h3>Verify your work</h3>
+                                <p>Option 1 still shows Ruler with Active False; option 2 with keyword Workshop Ruler no
+                                    longer finds it. Reactivate with option 16, then search again.</p>
+                            </div>
+                            <label class="check"><input type="checkbox" data-save="task-15"><span>I ran option 16 and
+                                    checked the result.</span></label>
+                        </article>
+                    </div>
+                    <footer class="step-footer"><button class="button secondary s2-btn" data-prev>← Previous</button>
+                        <div class="step-actions"><button class="button s2-btn primary" data-complete="9"
+                                aria-pressed="false">✓ Mark step complete</button><button
+                                class="button secondary s2-btn" data-next>Next →</button></div>
+                    </footer>
+                </section>
+                <section class="lesson" id="s6-panel-10" aria-labelledby="s6-title-10" hidden>
+                    <div class="panel-head"><span class="section-kicker">SESSION 08 · STEP 11 / 12 · 12 MINUTES</span>
+                        <h1 id="s6-title-10" tabindex="-1">Edit in a new context</h1>
+                        <p>Disconnected update</p>
+                    </div>
+                    <div class="card s2-card">
+                        <h2>The edit page is not one long-lived DbContext</h2>
+                        <p>Imagine a web user opens an edit page, waits, changes the price, and presses Save later. The
+                            read request is already finished when editing occurs.</p>
+                        <div class="s06-flow">
+                            <div class="s06-flow-node"><span>A</span><strong>Read context</strong>
+                                <p>Read the row without tracking, display it, dispose A.</p>
+                            </div>
+                            <div class="s06-flow-node"><span>…</span><strong>Time passes</strong>
+                                <p>User enters a new price. Only the ID and permitted value are needed for the save.</p>
+                            </div>
+                            <div class="s06-flow-node"><span>B</span><strong>Save context</strong>
+                                <p>Retrieve by ID again, change price, save, dispose B.</p>
+                            </div>
+                        </div>
+                        <p>Object identity is not a database row. Disposing the old DbContext stops its tracking; the
+                            new context has its own tracker. Re-query with the primary key rather than sending all
+                            edited data indiscriminately.</p>
+                    </div>
+                    <div class="card s2-card">
+                        <h2>Practise the two-request pattern</h2>
+                        <article class="workshop-task">
+                            <span class="task-tag">TODO 16 · MENU 17 · WorkshopTasks.cs</span>
+                            <h3>Edit with separate contexts</h3>
+                            <p>In context A, show one practice item via AsNoTracking. Dispose A before asking for the
+                                new price. Use context B to find the same ID, update only UnitPrice and save. Verify
+                                with a third fresh read.</p>
+                            <p><strong>Predict before running:</strong> Why does SaveChangesAsync on a different context
+                                not automatically persist edits made to an object from the first context?</p>
+                            <details class="s2-details">
+                                <summary>Hint</summary>
+                                <div class="reveal">
+                                    <p>Use explicit using blocks to mark lifetime. Only after the read block ends call
+                                        Inputs.TryPrice. A missing row in either request must be handled.</p>
+                                </div>
+                            </details>
+                            <details class="s2-details">
+                                <summary>Reference solution — open after your attempt</summary>
+                                <div class="reveal">
+                                    <div class="code-shell">
+                                        <div class="code-head"><span>WorkshopTasks.cs · TODO 16 body only</span><button
+                                                class="copy copy-btn" type="button">Copy code</button></div>
+                                        <pre tabindex="0"><code>using (var readDb = new InventoryDbContext(options))
 {
     var displayed = await readDb.Items.AsNoTracking()
         .SingleOrDefaultAsync(i =&gt; i.Id == id);
@@ -387,36 +1341,144 @@ using var verifyDb = new InventoryDbContext(options);
 var stored = await verifyDb.Items.AsNoTracking()
     .SingleOrDefaultAsync(i =&gt; i.Id == id);
 if (stored is not null) Reports.PrintItems(new[] { stored });
-else Console.WriteLine(&quot;Item no longer exists.&quot;);</code></pre></div><p>Replace only the statements inside the START/END markers. Keep the supplied method signature and input logic.</p></div></details>
-      <div class="s06-outcome"><h3>Verify your work</h3><p>Edit Workshop Eraser to 1.80. The read context has ended before input; the verification output shows the new price with the same ID and unchanged category/supplier.</p></div>
-      <label class="check"><input type="checkbox" data-save="task-16"><span>I ran option 17 and checked the result.</span></label>
-    </article></div><aside class="teacher-note s2-note"><img class="s2-note__mascot" src="images/db-mascot-teacher.webp" alt="" width="64" height="64"><div class="s2-note__content"><strong>Concurrency is a later topic</strong><p>Reloading by key reduces unnecessary updates to other columns, but it does not by itself prevent concurrent lost updates. We will address concurrency in a later unit.</p></div></aside><footer class="step-footer"><button class="button secondary s2-btn" data-prev >← Previous</button><div class="step-actions"><button class="button s2-btn primary" data-complete="10" aria-pressed="false">✓ Mark step complete</button><button class="button secondary s2-btn" data-next >Next →</button></div></footer></section>
-<section class="lesson" id="s6-panel-11" aria-labelledby="s6-title-11" hidden><div class="panel-head"><span class="section-kicker">SESSION 08 · STEP 12 / 12 · 8 MINUTES</span><h1 id="s6-title-11" tabindex="-1">Remove, verify and submit</h1><p>RemoveRange and evidence</p></div><div class="card s2-card"><h2>Finish the workshop safely</h2>
-    <article class="workshop-task">
-      <span class="task-tag">TODO 17 · MENU 18 · WorkshopTasks.cs</span>
-      <h3>Remove multiple items</h3><p>Retrieve the same two practice IDs, confirm both exist, display their names, ask for exact YES, remove both with RemoveRange and save once.</p>
-      <p><strong>Predict before running:</strong> What is the state before saving after RemoveRange?</p>
-      <details class="s2-details"><summary>Hint</summary><div class="reveal"><p>Cancel if not exactly two rows, or confirmation is not YES. Never call RemoveRange with every item.</p></div></details>
-      <details class="s2-details"><summary>Reference solution — open after your attempt</summary><div class="reveal"><div class="code-shell"><div class="code-head"><span>WorkshopTasks.cs · TODO 17 body only</span><button class="copy copy-btn" type="button">Copy code</button></div><pre tabindex="0"><code>var items = await db.Items.Where(i =&gt; i.Id == first || i.Id == second).ToListAsync();
+else Console.WriteLine(&quot;Item no longer exists.&quot;);</code></pre>
+                                    </div>
+                                    <p>Replace only the statements inside the START/END markers. Keep the supplied
+                                        method signature and input logic.</p>
+                                </div>
+                            </details>
+                            <div class="s06-outcome">
+                                <h3>Verify your work</h3>
+                                <p>Edit Workshop Eraser to 1.80. The read context has ended before input; the
+                                    verification output shows the new price with the same ID and unchanged
+                                    category/supplier.</p>
+                            </div>
+                            <label class="check"><input type="checkbox" data-save="task-16"><span>I ran option 17 and
+                                    checked the result.</span></label>
+                        </article>
+                    </div>
+                    <aside class="teacher-note s2-note"><img class="s2-note__mascot" src="images/db-mascot-teacher.webp"
+                            alt="" width="64" height="64">
+                        <div class="s2-note__content"><strong>Concurrency is a later topic</strong>
+                            <p>Reloading by key reduces unnecessary updates to other columns, but it does not by itself
+                                prevent concurrent lost updates. We will address concurrency in a later unit.</p>
+                        </div>
+                    </aside>
+                    <footer class="step-footer"><button class="button secondary s2-btn" data-prev>← Previous</button>
+                        <div class="step-actions"><button class="button s2-btn primary" data-complete="10"
+                                aria-pressed="false">✓ Mark step complete</button><button
+                                class="button secondary s2-btn" data-next>Next →</button></div>
+                    </footer>
+                </section>
+                <section class="lesson" id="s6-panel-11" aria-labelledby="s6-title-11" hidden>
+                    <div class="panel-head"><span class="section-kicker">SESSION 08 · STEP 12 / 12 · 8 MINUTES</span>
+                        <h1 id="s6-title-11" tabindex="-1">Remove, verify and submit</h1>
+                        <p>RemoveRange and evidence</p>
+                    </div>
+                    <div class="card s2-card">
+                        <h2>Finish the workshop safely</h2>
+                        <article class="workshop-task">
+                            <span class="task-tag">TODO 17 · MENU 18 · WorkshopTasks.cs</span>
+                            <h3>Remove multiple items</h3>
+                            <p>Retrieve the same two practice IDs, confirm both exist, display their names, ask for
+                                exact YES, remove both with RemoveRange and save once.</p>
+                            <p><strong>Predict before running:</strong> What is the state before saving after
+                                RemoveRange?</p>
+                            <details class="s2-details">
+                                <summary>Hint</summary>
+                                <div class="reveal">
+                                    <p>Cancel if not exactly two rows, or confirmation is not YES. Never call
+                                        RemoveRange with every item.</p>
+                                </div>
+                            </details>
+                            <details class="s2-details">
+                                <summary>Reference solution — open after your attempt</summary>
+                                <div class="reveal">
+                                    <div class="code-shell">
+                                        <div class="code-head"><span>WorkshopTasks.cs · TODO 17 body only</span><button
+                                                class="copy copy-btn" type="button">Copy code</button></div>
+                                        <pre tabindex="0"><code>var items = await db.Items.Where(i =&gt; i.Id == first || i.Id == second).ToListAsync();
 if (items.Count != 2) { Console.WriteLine(&quot;One or both items were not found.&quot;); return; }
 Reports.PrintItems(items);
 Console.Write(&quot;Type YES to delete both items: &quot;);
 if (Console.ReadLine() != &quot;YES&quot;) { Console.WriteLine(&quot;Cancelled.&quot;); return; }
 db.Items.RemoveRange(items);
 int affected = await db.SaveChangesAsync();
-Console.WriteLine($&quot;State entries written: {affected}&quot;);</code></pre></div><p>Replace only the statements inside the START/END markers. Keep the supplied method signature and input logic.</p></div></details>
-      <div class="s06-outcome"><h3>Verify your work</h3><p>First enter NO and verify both still exist using option 5 or 1. Then enter YES; neither ID appears in option 1. Option 21 can now remove the empty practice category.</p></div>
-      <label class="check"><input type="checkbox" data-save="task-17"><span>I ran option 18 and checked the result.</span></label>
-    </article>
-<p><strong>Complete the parent test:</strong> run option 21 again with the original practice category ID, now empty. Confirm YES. Keep the spare item (created in seed category 1), the seed data, and the practice supplier.</p>
-</div><div class="card s2-card"><h2>Check and submit</h2><p>Download the evidence sheet. Record actual generated IDs and representative outputs. Submit the completed source solution without bin/obj/.vs folders and the short evidence sheet.</p>
-<div class="button-row"><a class="button s2-btn primary" href="downloads/evidence.md" download>Evidence sheet</a><a class="button s2-btn secondary" href="downloads/verify-shop.sql" download>SSMS verification</a></div>
-<label class="check"><input type="checkbox" data-save="evidence-query"><span>I can explain query construction, execution, ordering and grouping.</span></label><label class="check"><input type="checkbox" data-save="evidence-crud"><span>I verified created, updated, inactive and removed records.</span></label><label class="check"><input type="checkbox" data-save="evidence-relationship"><span>I can explain why a referenced category cannot be deleted.</span></label><label class="check"><input type="checkbox" data-save="evidence-tracker"><span>I can explain when a new context is needed and why tracked objects need no UpdateRange.</span></label>
-<label for="reflection"><strong>Reflection:</strong> How does the application know which data to save, and how does the database protect relationships?</label><textarea rows="4" id="reflection" data-save="reflection" placeholder="Write a short answer…"></textarea></div><div class="card s2-card"><h2>Where we go next</h2>
-<p><strong>Next session:</strong> create a database schema from C# models using Code First migrations. Then return to relationships with navigation properties and related-data loading.</p>
-<p>Today we changed stored data with SaveChanges. Migrations will change the database structure. Keep these separate.</p>
-</div><section class="card s2-card" id="sources"><h2>Sources and downloads</h2><p>Classroom adaptations of Gorman, <em>Practical Entity Framework Core 10</em>, Ch. 6 (Activity 6-1), Ch. 8 (Activity 8-1), and Ch. 9 projection concepts; Smith, <em>Entity Framework Core in Action</em>, Ch. 2 §2.8–2.9 and Ch. 3. The shop records are prepared specifically for this workshop.</p><ul><li><a href="downloads/EF10_Session07-08_Student_Starter.zip" download>Student starter</a></li><li><a href="downloads/START-HERE.md" download>Setup and task index</a></li><li><a href="downloads/LINQ_Quick_Reference.pdf">LINQ quick reference (Sessions 04–05)</a></li><li><a href="downloads/CRUD_Quick_Reference.md" download>CRUD quick reference (Session 06)</a></li><li><a href="https://learn.microsoft.com/en-us/ef/core/querying/pagination" target="_blank" rel="noopener">Microsoft Learn: pagination</a></li><li><a href="https://learn.microsoft.com/en-us/ef/core/querying/complex-query-operators" target="_blank" rel="noopener">Microsoft Learn: complex LINQ operators</a></li><li><a href="https://learn.microsoft.com/en-us/ef/core/saving/disconnected-entities" target="_blank" rel="noopener">Microsoft Learn: disconnected entities</a></li></ul></section><footer class="step-footer"><button class="button secondary s2-btn" data-prev >← Previous</button><div class="step-actions"><button class="button s2-btn primary" data-complete="11" aria-pressed="false">✓ Mark step complete</button><button class="button secondary s2-btn" data-next disabled>Next →</button></div></footer></section>
-<p class="page-foot">TVET Interactive Codelab Studio · Database Management · Sessions 07–08</p>
+Console.WriteLine($&quot;State entries written: {affected}&quot;);</code></pre>
+                                    </div>
+                                    <p>Replace only the statements inside the START/END markers. Keep the supplied
+                                        method signature and input logic.</p>
+                                </div>
+                            </details>
+                            <div class="s06-outcome">
+                                <h3>Verify your work</h3>
+                                <p>First enter NO and verify both still exist using option 5 or 1. Then enter YES;
+                                    neither ID appears in option 1. Option 21 can now remove the empty practice
+                                    category.</p>
+                            </div>
+                            <label class="check"><input type="checkbox" data-save="task-17"><span>I ran option 18 and
+                                    checked the result.</span></label>
+                        </article>
+                        <p><strong>Complete the parent test:</strong> run option 21 again with the original practice
+                            category ID, now empty. Confirm YES. Keep the spare item (created in seed category 1), the
+                            seed data, and the practice supplier.</p>
+                    </div>
+                    <div class="card s2-card">
+                        <h2>Check and submit</h2>
+                        <p>Download the evidence sheet. Record actual generated IDs and representative outputs. Submit
+                            the completed source solution without bin/obj/.vs folders and the short evidence sheet.</p>
+                        <div class="button-row"><a class="button s2-btn primary" href="downloads/evidence.md"
+                                download>Evidence sheet</a><a class="button s2-btn secondary"
+                                href="downloads/verify-shop.sql" download>SSMS verification</a></div>
+                        <label class="check"><input type="checkbox" data-save="evidence-query"><span>I can explain query
+                                construction, execution, ordering and grouping.</span></label><label
+                            class="check"><input type="checkbox" data-save="evidence-crud"><span>I verified created,
+                                updated, inactive and removed records.</span></label><label class="check"><input
+                                type="checkbox" data-save="evidence-relationship"><span>I can explain why a referenced
+                                category cannot be deleted.</span></label><label class="check"><input type="checkbox"
+                                data-save="evidence-tracker"><span>I can explain when a new context is needed and why
+                                tracked objects need no UpdateRange.</span></label>
+                        <label for="reflection"><strong>Reflection:</strong> How does the application know which data to
+                            save, and how does the database protect relationships?</label><textarea rows="4"
+                            id="reflection" data-save="reflection" placeholder="Write a short answer…"></textarea>
+                    </div>
+                    <div class="card s2-card">
+                        <h2>Where we go next</h2>
+                        <p><strong>Next session:</strong> create a database schema from C# models using Code First
+                            migrations. Then return to relationships with navigation properties and related-data
+                            loading.</p>
+                        <p>Today we changed stored data with SaveChanges. Migrations will change the database structure.
+                            Keep these separate.</p>
+                    </div>
+                    <section class="card s2-card" id="sources">
+                        <h2>Sources and downloads</h2>
+                        <p>Classroom adaptations of Gorman, <em>Practical Entity Framework Core 10</em>, Ch. 6 (Activity
+                            6-1), Ch. 8 (Activity 8-1), and Ch. 9 projection concepts; Smith, <em>Entity Framework Core
+                                in Action</em>, Ch. 2 §2.8–2.9 and Ch. 3. The shop records are prepared specifically for
+                            this workshop.</p>
+                        <ul>
+                            <li><a href="downloads/EF10_Session07-08_Student_Starter.zip" download>Student starter</a>
+                            </li>
+                            <li><a href="downloads/START-HERE.md" download>Setup and task index</a></li>
+                            <li><a href="downloads/LINQ_Quick_Reference.pdf">LINQ quick reference (Sessions 04–05)</a>
+                            </li>
+                            <li><a href="downloads/CRUD_Quick_Reference.md" download>CRUD quick reference (Session
+                                    06)</a></li>
+                            <li><a href="https://learn.microsoft.com/en-us/ef/core/querying/pagination" target="_blank"
+                                    rel="noopener">Microsoft Learn: pagination</a></li>
+                            <li><a href="https://learn.microsoft.com/en-us/ef/core/querying/complex-query-operators"
+                                    target="_blank" rel="noopener">Microsoft Learn: complex LINQ operators</a></li>
+                            <li><a href="https://learn.microsoft.com/en-us/ef/core/saving/disconnected-entities"
+                                    target="_blank" rel="noopener">Microsoft Learn: disconnected entities</a></li>
+                        </ul>
+                    </section>
+                    <footer class="step-footer"><button class="button secondary s2-btn" data-prev>← Previous</button>
+                        <div class="step-actions"><button class="button s2-btn primary" data-complete="11"
+                                aria-pressed="false">✓ Mark step complete</button><button
+                                class="button secondary s2-btn" data-next disabled>Next →</button></div>
+                    </footer>
+                </section>
+                <p class="page-foot">TVET Interactive Codelab Studio · Database Management · Sessions 07–08</p>
             </main>
         </div>
     </div>
@@ -425,8 +1487,9 @@ Console.WriteLine($&quot;State entries written: {affected}&quot;);</code></pre><
         <h2 id="s6-reset-title">Reset Sessions 07–08?</h2>
         <p>This clears this session’s saved progress, checkboxes, notes on this device.</p>
         <div class="button-row">
-            <button class="button s2-btn primary" id="s6-confirm-reset" type="button">Reset Sessions 07–08</button><button
-                class="button secondary s2-btn" id="s6-cancel-reset" type="button">Keep my progress</button>
+            <button class="button s2-btn primary" id="s6-confirm-reset" type="button">Reset Sessions
+                07–08</button><button class="button secondary s2-btn" id="s6-cancel-reset" type="button">Keep my
+                progress</button>
         </div>
     </dialog><noscript>
         <p class="noscript">Enable JavaScript to navigate the codelab. The starter and references are available in the
